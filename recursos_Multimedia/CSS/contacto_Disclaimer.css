@@ -1,0 +1,177 @@
+/* Global / reinicio */
+* { box-sizing: border-box; }
+body {
+	margin: 0;
+	padding: 0;
+	/* Fondo: papel amarillo */
+	background: url("../img/Fondo_PapelAmarillo.jpg") center top/cover no-repeat;
+}
+
+/* Estilos del footer | Disclaimer */
+footer {
+	/* El footer usa papel verde para contrastar con el fondo de la página */
+	background: url("../img/Fondo_PapelVerde.jpg") center/cover no-repeat;
+	padding: 24px 12px;
+	margin-top: 0;
+	color: #fff;
+}
+
+/* Contenedor de marca del footer */
+.footer-brand {
+	text-align: center;
+}
+
+/* Logo del equipo en el footer */
+.footer-brand img {
+	max-width: 180px;
+	height: auto;
+	display: block;
+	margin: 0 auto 8px;
+}
+
+/* Texto de derechos de autor */
+.footer-brand h5 {
+	margin: 0;
+	font-weight: 400;
+	color: #fff;
+}
+
+/* La sección de contacto utiliza el mismo fondo de papel verde */ 
+.contact-section {
+	/* La sección de contacto usa papel verde */
+	background: url("../img/Fondo_PapelVerde.jpg") center/cover no-repeat;
+	padding: 40px 24px;
+	color: #1a3a1f;
+	font-family: 'Arial', sans-serif;
+}
+
+/* Títulos en la sección de contacto */
+.contact-section h1 {
+	font-size: 40px;
+	margin: 0 0 16px 0;
+	color: #000;
+	font-weight: 600;
+}
+
+/* Subtítulo descriptivo de contacto */
+.contact-section h4 {
+	font-size: 18px;
+	margin: 0 0 28px 0;
+	color: #000;
+	line-height: 1.6;
+	font-weight: 400;
+}
+
+/* Estilos del formulario de contacto */
+.contact-section form {
+	background: rgba(255, 255, 255, 0.92);
+	padding: 36px 40px;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+/* Contenedor de campos con etiqueta */
+.input-with-label {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Etiquetas de campos del formulario */
+.input-with-label span {
+	font-weight: 600;
+	color: #2d5238;
+	margin-bottom: 8px;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+/* Campos de entrada (texto y email) y área de mensaje */
+.input-with-label input,
+.input-with-label textarea {
+	padding: 14px 16px;
+	border: 1px solid #d0ddd0;
+	border-radius: 4px;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	color: #333;
+	background-color: #f9fbf9;
+	transition: all 0.3s ease;
+}
+
+/* Efecto de focus (cuando el campo está seleccionado) */
+.input-with-label input:focus,
+.input-with-label textarea:focus {
+	outline: none;
+	border-color: #3d6b47;
+	background-color: #fff;
+	box-shadow: 0 0 4px rgba(61, 107, 71, 0.3);
+}
+
+/* Área de texto para mensaje */
+.input-with-label textarea {
+	resize: vertical;
+	min-height: 215px;
+	line-height: 1.5;
+}
+
+/* Botón de envío */
+.contact-section form input[type="submit"] {
+	background-color: #3d6b47;
+	color: #fff;
+	border: none;
+	padding: 14px 32px;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: all 0.3s ease;
+	margin-top: 8px;
+}
+
+/* Efecto hover (cuando usuario pasa el ratón sobre el botón) */
+.contact-section form input[type="submit"]:hover {
+	background-color: #2d5238;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto activo (cuando el usuario hace clic) */
+.contact-section form input[type="submit"]:active {
+	transform: translateY(0);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Línea divisoria del disclaimer: negra y visible */
+hr {
+	margin: 0;
+	border: 0;
+	border-top: 2px solid #000;
+	height: 0;
+	background: transparent;
+}
+
+/* Reducir márgenes verticales en headings para evitar espacios en blanco */
+.contact-section h1,
+.contact-section h2,
+.contact-section h3,
+.footer-brand h5 {
+	margin-top: 0;
+}
+
+/* Asegurar que el contenedor principal no interrumpa al background */
+body > div {
+	background: transparent;
+}
+
+/* Eliminar márgenes por defecto en secciones para mantener los fondos continuos */
+section {
+	margin: 0;
+	padding: 0 12px;
+}
