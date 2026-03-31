@@ -49,7 +49,7 @@ footer {
 .contact-section h1 {
 	font-size: 40px;
 	margin: 0 0 16px 0;
-	color: #000;
+	color: #fff;
 	font-weight: 600;
 }
 
@@ -57,7 +57,7 @@ footer {
 .contact-section h4 {
 	font-size: 18px;
 	margin: 0 0 28px 0;
-	color: #000;
+	color: #fff;
 	line-height: 1.6;
 	font-weight: 400;
 }
@@ -106,12 +106,6 @@ footer {
 	justify-content: center;
 }
 
-/* Separador entre iconos */
-.separator {
-	color: #000;
-	font-size: 18px;
-	font-weight: 600;
-}
 
 /* Estilos de los enlaces de redes con iconos */
 .social-link {
