@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Path To Nowhere</title>
-    <link rel="stylesheet" href="recursos_Multimedia/CSS/navbar.css"> <!-- Estilos de la barra de navegación -->
     <link rel="stylesheet" href="recursos_Multimedia/CSS/contacto_Disclaimer.css"> <!-- Estilos de contacto y footer -->
     <script src="recursos_Multimedia/JS/index.js"></script> <!-- Script principal -->
 </head>
@@ -93,7 +92,7 @@
             </div>
         </section>
 
-        <!-- Aquí va la sección de las contribuciones-->
+        <!-- Aquí va la sección de las contribuciones. ESTA SECCIÓN VA A LA IZQUIERDA-->
         <section>
             <h2>CONTRIBUCIONES</h2>
             <div>
@@ -133,23 +132,38 @@
             <h4>
                 Por favor, rellena el formulario de abajo y nuestro equipo se pondrá en contacto contigo en breve.
             </h4>
-            <form> <!-- Aquí va el formulario de contacto.-->
-                <div class="input-with-label text-left">
-                    <span>Nombre:</span>
-                    <input type="text" name="name" placeholder="Escriba su nombre" required="" maxlength="100">
+            <div class="contact-wrapper">
+                <!-- Formulario a la izquierda -->
+                <form> <!-- Aquí va el formulario de contacto.-->
+                    <div class="input-with-label text-left">
+                        <span>Nombre:</span>
+                        <input type="text" name="name" placeholder="Escriba su nombre" required="" maxlength="100">
+                    </div>
+                    <div class="input-with-label text-left">
+                        <span>Correo electrónico:</span>
+                        <input type="email" name="email" placeholder="Escriba su correo electrónico" required="" maxlength="254">
+                    </div>
+                    <div class="input-with-label text-left">
+                        <span>Tu mensaje:</span>
+                        <textarea name="message" placeholder="Escriba su mensaje" rows="3" required=""
+                            maxlength="5000"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+                
+                <!-- Redes sociales a la derecha -->
+                <div class="social-networks">
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" class="social-link">
+                            <img src="recursos_Multimedia/img/github-icon.png" alt="GitHub">
+                        </a>
+                        <span class="separator"></span>
+                        <a href="https://instagram.com" target="_blank" class="social-link">
+                            <img src="recursos_Multimedia/img/instagram-icon.png" alt="Instagram">
+                        </a>
+                    </div>
                 </div>
-                <div class="input-with-label text-left">
-                    <span>Correo electrónico:</span>
-                    <input type="email" name="email" placeholder="Escriba su correo electrónico" required="" maxlength="254">
-                </div>
-                <div class="input-with-label text-left">
-                    <span>Tu mensaje:</span>
-                    <textarea name="message" placeholder="Escriba su mensaje" rows="3" required=""
-                        maxlength="5000"></textarea>
-                </div>
-                <input type="submit" value="Enviar">
-            </form>
-            <div>Redes (github, insta)</div>
+            </div>
         </div>
         <hr>
         <footer> <!-- Disclaimer con el logo-->
@@ -158,6 +172,8 @@
                     <img alt="Team Lemon Logo" src="recursos_Multimedia/img/LogotipoTeamLemon_Negro.png">
                 </a>
                 <h5>© Copyright 2026 Team Lemon - All Rights Reserved</h5>
+                <h5>ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real.
+                     Práctica de Multimedia, 1º GDDV - Curso 25/26 (Móstoles), URJC. La URJC no se hace responsable del contenido expuesto por el autor.</h5>
             </div>
         </footer>
     </div>

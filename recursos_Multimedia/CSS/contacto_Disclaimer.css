@@ -72,6 +72,66 @@ footer {
 	margin: 0 auto;
 }
 
+/* Contenedor flexible para formulario y redes lado a lado */
+.contact-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-wrapper form {
+	flex: 1;
+	max-width: 600px;
+	margin: 0;
+	width: 100%;
+}
+
+/* Redes sociales en la esquina inferior derecha */
+.social-networks {
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+}
+
+/* Lista de redes sociales en formato horizontal */
+.social-links {
+	margin: 0;
+	text-align: center;
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Separador entre iconos */
+.separator {
+	color: #000;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/* Estilos de los enlaces de redes con iconos */
+.social-link {
+	text-decoration: none;
+	display: inline-block;
+	transition: transform 0.3s ease;
+}
+
+.social-link img {
+	width: 40px;
+	height: 40px;
+	display: block;
+	cursor: pointer;
+}
+
+/* Efecto hover en enlaces de redes */
+.social-link:hover {
+	transform: scale(1.15);
+}
+
 /* Contenedor de campos con etiqueta */
 .input-with-label {
 	margin-bottom: 20px;
