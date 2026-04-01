@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Path To Nowhere</title>
     <link rel="stylesheet" href="recursos_Multimedia/CSS/contacto_Disclaimer.css"> <!-- Estilos de contacto y footer -->
+    <link rel="stylesheet" href="recursos_Multimedia/CSS/home.css"> <!-- Estilos de la sección Home -->
     <script src="recursos_Multimedia/JS/index.js"></script> <!-- Script principal -->
 </head>
 
@@ -16,7 +17,7 @@
         <div>
             <p>LOGO</p>
         </div>
-        
+
         <!-- Links de navegación a la derecha -->
         <div>
             <a>Home</a>
@@ -35,18 +36,37 @@
 
     <div>
         <!-- Esta seccion es la que se ve HOME.
-        Aquí va el banner, con la imagen del juego, el título, el lema y los logos de las plataformas. 
-        Luego Imagen, descripción y vídeo-->
+        Aquí va el banner, con la imagen del juego, el título, el lema. 
+        Luego Imagen, descripción, plataformas y vídeo-->
         <section>
             <div>
                 <span>ILUSTRACIÓN PAISAJE</span>
                 <h1>TÍTULO</h1>
                 <p>LEMA</p>
                 <div>LOGOS PLATAFORMAS</div>
+                <br>
             </div>
-            <div>
-                <div>IMAGEN PRINCIPAL.</div>
-                <div>DESCRIPCIÓN</div>
+            <div class="home-main-container">
+                <div class="home-image">
+                    <div>
+                        <a>
+                            <img alt="Team Lemon Logo" src="recursos_Multimedia/img/imagen_Placeholder.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="home-description-container">
+                    <div class="home-description">Path to Nowhere es un videojuego western de acción/aventura en el que podrás investigar todo el mundo que te rodea. Deberás de recopilar pistas y testimonios sobre el famoso criminal de la región, para conseguir darle caza y llevarte tu parte de la recompensa. Sin embargo, nadie sabe de su paradero ni su identidad, por lo que no sabes que, ni a quien, te vas a encontrar al final del camino.
+</div>
+                    <div class="platform-links">
+                        <a href="https://store.playstation.com/es-es/pages/latest" target="_blank" class="platform-link">
+                            <img src="recursos_Multimedia/img/logoPS5.png" alt="PlayStation Store">
+                        </a>
+                        <span></span>
+                        <a href="https://www.xbox.com/es-ES/" target="_blank" class="platform-link">
+                            <img src="recursos_Multimedia/img/logoXbox.png" alt="XBox Store">
+                        </a>
+                    </div>
+                </div>
             </div>
             <div>
                 <div>VIDEO</div>
@@ -141,7 +161,8 @@
                     </div>
                     <div class="input-with-label text-left">
                         <span>Correo electrónico:</span>
-                        <input type="email" name="email" placeholder="Escriba su correo electrónico" required="" maxlength="254">
+                        <input type="email" name="email" placeholder="Escriba su correo electrónico" required=""
+                            maxlength="254">
                     </div>
                     <div class="input-with-label text-left">
                         <span>Tu mensaje:</span>
@@ -150,7 +171,7 @@
                     </div>
                     <input type="submit" value="Enviar">
                 </form>
-                
+
                 <!-- Redes sociales a la derecha -->
                 <div class="social-networks">
                     <div class="social-links">
@@ -168,12 +189,14 @@
         <hr>
         <footer> <!-- Disclaimer con el logo-->
             <div class="footer-brand">
-                <a href="">
+                <a>
                     <img alt="Team Lemon Logo" src="recursos_Multimedia/img/LogotipoTeamLemon_Negro.png">
                 </a>
                 <h5>© Copyright 2026 Team Lemon - All Rights Reserved</h5>
-                <h5>ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real.
-                     Práctica de Multimedia, 1º GDDV - Curso 25/26 (Móstoles), URJC. La URJC no se hace responsable del contenido expuesto por el autor.</h5>
+                <h5>ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no
+                    representa un producto real.
+                    Práctica de Multimedia, 1º GDDV - Curso 25/26 (Móstoles), URJC. La URJC no se hace responsable del
+                    contenido expuesto por el autor.</h5>
             </div>
         </footer>
     </div>
