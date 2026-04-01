@@ -1,0 +1,32 @@
+/* Estilos para la sección PERSONAJES */
+.personajes-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+/* Imágenes divisoras (arriba y abajo del h2) */
+.personajes-divisor {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Divisor superior */
+.personajes-divisor-top {
+	margin-bottom: 8px;
+}
+
+/* Divisor inferior */
+.personajes-divisor-bottom {
+	margin-top: 8px;
+	margin-bottom: 24px;
+}
+
+/* H2 de personajes */
+.personajes-section h2 {
+	text-align: center;
+	margin: 0;
+	font-size: 40px;
+}
