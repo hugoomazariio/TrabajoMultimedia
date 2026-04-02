@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Path To Nowhere</title>
-        <link rel="stylesheet" href="recursos_Multimedia/CSS/home.css"> <!-- Estilos de la sección Home -->
-        <link rel="stylesheet" href="recursos_Multimedia/CSS/personajes.css"> <!-- Estilos de la sección Personajes -->
+    <link rel="stylesheet" href="recursos_Multimedia/CSS/home.css"> <!-- Estilos de la sección Home -->
+    <link rel="stylesheet" href="recursos_Multimedia/CSS/personajes.css"> <!-- Estilos de la sección Personajes -->
     <link rel="stylesheet" href="recursos_Multimedia/CSS/contacto_Disclaimer.css"> <!-- Estilos de contacto y footer -->
-
-    <script src="recursos_Multimedia/JS/index.js"></script> <!-- Script principal -->
 </head>
 
 <body>
@@ -52,7 +50,7 @@
                 <div class="home-image">
                     <div>
                         <a>
-                            <img alt="Team Lemon Logo" src="recursos_Multimedia/img/imagen_Placeholder.png">
+                            <img alt="Imagen Principal" src="recursos_Multimedia/img/imagen_Placeholder.png">
                         </a>
                     </div>
                 </div>
@@ -105,8 +103,26 @@
             <img src="recursos_Multimedia/img/DivisorLineaDoble_Abajo.png" alt="Decoración"
                 class="personajes-divisor personajes-divisor-bottom">
             <div>
-                <div>IMAGEN EXPEDIENTE</div>
-                <div>ICONOS CARACTERISTICOS</div>
+                <div>
+                    <a>
+                        <img alt="Imagen Principal" src="recursos_Multimedia/img/imagen_Placeholder.png" id="imgchange">
+                    </a>
+                </div>
+                <div class="iconos-container">
+                    <!-- Estos iconos están como placeholder para comprobar que funciona correcto el JS -->
+                    <div id="botonPJ1">
+                        <img src="recursos_Multimedia/img/logoPS5.png" alt="Personaje 1" class="icono">
+                    </div>
+                    <div id="botonPJ2">
+                        <img src="recursos_Multimedia/img/logoXbox.png" alt="Personaje 2" class="icono">
+                    </div>
+                    <div id="botonPJ3">
+                        <img src="recursos_Multimedia/img/instagram-icon.png" alt="Personaje 3" class="icono">
+                    </div>
+                    <div id="salir">
+                        <img src="recursos_Multimedia/img/PuntoLista_Negro.png" alt="Cerrar expediente" class="icono">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -212,6 +228,8 @@
         </footer>
     </div>
 
+
+    <script src="recursos_Multimedia/JS/cambioExpedientePersonaje.js"></script> <!-- Script para cambiar el expediente del personaje -->
 </body>
 
 </html>

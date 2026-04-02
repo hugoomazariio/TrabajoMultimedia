@@ -30,3 +30,26 @@
 	margin: 0;
 	font-size: 40px;
 }
+
+/* Contenedor de iconos característicos */
+.iconos-container {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+/* Estilos para cada icono */
+.icono {
+	width: 80px;
+	height: 80px;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+/* Efecto hover: agranda el icono */
+.icono:hover {
+	transform: scale(1.3);
+}
