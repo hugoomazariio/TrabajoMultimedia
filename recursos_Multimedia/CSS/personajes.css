@@ -9,8 +9,7 @@
 /* Imágenes divisoras (arriba y abajo del h2) */
 .personajes-divisor {
 	width: 100%;
-	height: auto;
-	display: block;
+	height: 50px;
 }
 
 /* Divisor superior */

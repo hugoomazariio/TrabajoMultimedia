@@ -1,4 +1,12 @@
 /* Estilos para la sección HOME */
+
+body {
+	margin: 0;
+	padding: 0;
+	/* Fondo: papel amarillo */
+	background: url("../img/Fondo_PapelAmarillo.jpg") center top/cover no-repeat;
+}
+
 /* Contenedor principal de imagen y descripción */
 .home-main-container {
 	display: flex;
