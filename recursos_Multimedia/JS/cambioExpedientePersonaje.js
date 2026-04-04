@@ -5,18 +5,18 @@ let btnSalir = document.getElementById("salir");
 let imgchange = document.getElementById("imgchange");
 
 btnPJ1.onclick = function() {
-    imgchange.src = "recursos_Multimedia/img/logoPS5.png";
+    imgchange.src = "recursos_Multimedia/img/Personajes_Cazarrecompensas.jpg";
 }
 
 btnPJ2.onclick = function() {
-    imgchange.src = "recursos_Multimedia/img/logoXbox.png";
+    imgchange.src = "recursos_Multimedia/img/Personajes_Sheriff.jpg";
 }
 
 btnPJ3.onclick = function() {
     imgchange.src = "recursos_Multimedia/img/instagram-icon.png";
 }
 btnSalir.onclick = function() {
-    imgchange.src = "recursos_Multimedia/img/imagen_Placeholder.png";
+    imgchange.src = "recursos_Multimedia/img/Personajes_ExpedienteCerrado.jpg";
 }
 
 
