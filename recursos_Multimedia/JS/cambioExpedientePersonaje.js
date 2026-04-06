@@ -29,7 +29,7 @@ btnPJ2.onclick = function () {
 }
 
 btnPJ3.onclick = function () {
-    cambiarImagenConFade("recursos_Multimedia/img/instagram-icon.png");
+    cambiarImagenConFade("recursos_Multimedia/img/Personajes_Criminal.jpg");
 }
 
 btnSalir.onclick = function () {
