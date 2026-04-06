@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="recursos_Multimedia/CSS/home.css"> <!-- Estilos de la sección Home -->
     <link rel="stylesheet" href="recursos_Multimedia/CSS/personajes.css"> <!-- Estilos de la sección Personajes -->
     <link rel="stylesheet" href="recursos_Multimedia/CSS/contacto_Disclaimer.css"> <!-- Estilos de contacto y footer -->
+    <link rel="stylesheet" href="recursos_Multimedia/CSS/contribuciones.css"> <!-- Estilos de la sección Contribuciones -->
+
 </head>
 
 <body>
@@ -103,13 +105,15 @@
             <div>
                 <div class="fade-in">
                     <a>
-                        <img alt="Imagen Principal" src="recursos_Multimedia/img/Personajes_ExpedienteCerrado.jpg" id="imgchange">
+                        <img alt="Imagen Principal" src="recursos_Multimedia/img/Personajes_ExpedienteCerrado.jpg"
+                            id="imgchange">
                     </a>
                 </div>
                 <div class="iconos-container">
                     <!-- Estos iconos están como placeholder para comprobar que funciona correcto el JS -->
                     <div id="botonPJ1">
-                        <img src="recursos_Multimedia/img/Personajes_IconoCazarrecompensas.png" alt="Cazarrecompensas" class="icono">
+                        <img src="recursos_Multimedia/img/Personajes_IconoCazarrecompensas.png" alt="Cazarrecompensas"
+                            class="icono">
                     </div>
                     <div id="botonPJ2">
                         <img src="recursos_Multimedia/img/Personajes_IconoSheriff.png" alt="Sherrif" class="icono">
@@ -118,7 +122,8 @@
                         <img src="recursos_Multimedia/img/Personajes_IconoCriminal.png" alt="Criminal" class="icono">
                     </div>
                     <div id="salir">
-                        <img src="recursos_Multimedia/img/Icono_ExpedienteCerrado.png" alt="Cerrar expediente" class="icono">
+                        <img src="recursos_Multimedia/img/Icono_ExpedienteCerrado.png" alt="Cerrar expediente"
+                            class="icono">
                     </div>
                 </div>
             </div>
@@ -138,14 +143,12 @@
         </section>
 
         <!-- Aquí va la sección de las contribuciones. ESTA SECCIÓN VA A LA IZQUIERDA-->
-        <section>
-            <div>
-                        <a>
-                            <img alt="Divisor floritura" src="recursos_Multimedia/img/DivisorFloritura.png">
-                        </a>
-                    </div>
+        <section class="contribuciones-section">
+            <div class="divisor-container">
+                <img alt="Divisor floritura" src="recursos_Multimedia/img/DivisorFloritura.png" class="floritura">
+            </div>
             <h2>CONTRIBUCIONES</h2>
-            <div>
+            <div class="precios-container">
                 <p>Versión estándar .... 35€</p>
                 <p>Versión deluxe .... 50€</p>
                 <p>Música .... 5€</p>
@@ -177,7 +180,7 @@
         <section>
             <h2>COMENTARIOS</h2>
             <div class="contact-wrapper">
-             <form> <!-- Aquí va el formulario de contacto.-->
+                <form> <!-- Aquí va el formulario de contacto.-->
                     <div class="input-with-label text-left">
                         <span>Tu mensaje:</span>
                         <textarea name="message" placeholder="Escriba su comentario" rows="3" required=""
@@ -185,7 +188,7 @@
                     </div>
                     <input type="submit" value="Enviar">
                 </form>
-            <div>CAJA DE TEXTO</div>
+                <div>CAJA DE TEXTO</div>
         </section>
 
         <!-- Aquí va la sección de contacto-->
@@ -217,7 +220,8 @@
                 <!-- Redes sociales a la derecha -->
                 <div class="social-networks">
                     <div class="social-links">
-                        <a href="https://github.com/hugoomazariio/TrabajoMultimedia.git" target="_blank" class="social-link">
+                        <a href="https://github.com/hugoomazariio/TrabajoMultimedia.git" target="_blank"
+                            class="social-link">
                             <img src="recursos_Multimedia/img/github-icon.png" alt="GitHub">
                         </a>
                         <span></span>
@@ -244,7 +248,8 @@
     </div>
 
 
-    <script src="recursos_Multimedia/JS/cambioExpedientePersonaje.js"></script> <!-- Script para cambiar el expediente del personaje -->
+    <script src="recursos_Multimedia/JS/cambioExpedientePersonaje.js"></script>
+    <!-- Script para cambiar el expediente del personaje -->
 </body>
 
 </html>

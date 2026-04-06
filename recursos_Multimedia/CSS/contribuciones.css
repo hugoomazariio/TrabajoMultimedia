@@ -1,0 +1,22 @@
+/* Centrado vertical de toda la sección */
+.contribuciones-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Esto centra todo horizontalmente */
+    gap: 16px;           /* Espaciado constante entre elementos */
+    text-align: center;  /* Asegura que los párrafos también se centren */
+}
+
+/* Estilos para el divisor (floritura) */
+.floritura {
+    display: block;
+    margin: 0 auto;      /* Centrado clásico adicional */
+    max-width: 100%;     /* Evita que se salga en móviles */
+    height: auto;        /* Mantiene la proporción */
+}
+
+/* Estilos para el H2 de esta sección */
+.contribuciones-section h2 {
+    font-size: 40px;     /* Para que coincida con Personajes */
+    margin: 0;
+}
