@@ -1,8 +1,18 @@
+/* Fuentes */
+@font-face {
+    font-family: 'Cardo';
+    src: url('../fonts/Cardo/Cardo-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+	font-family: 'Cardo', serif;
+}
 /* Estilos para la sección HOME */
-
 body {
 	margin: 0;
 	padding: 0;
+	
 	/* Fondo: papel amarillo */
 	background: url("../img/Fondo_PapelAmarillo.jpg") center top/cover no-repeat;
 }
