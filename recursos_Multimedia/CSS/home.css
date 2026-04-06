@@ -1,18 +1,19 @@
 /* Fuentes */
 @font-face {
-    font-family: 'Cardo';
-    src: url('../fonts/Cardo/Cardo-Regular.ttf') format('truetype'); 
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Cardo';
+	src: url('../fonts/Cardo/Cardo-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
-*{
+
+* {
 	font-family: 'Cardo', serif;
 }
+
 /* Estilos para la sección HOME */
 body {
 	margin: 0;
 	padding: 0;
-	
 	/* Fondo: papel amarillo */
 	background: url("../img/Fondo_PapelAmarillo.jpg") center top/cover no-repeat;
 }
@@ -26,23 +27,23 @@ body {
 
 /* Imagen principal (izquierda) */
 .home-image {
-    flex: 0 0 50%;
+	flex: 0 0 50%;
 }
 
 /* Contenedor de descripción y plataformas (derecha) */
 .home-description-container {
-    flex: 0 0 45%;
-    display: flex;
-    flex-direction: column;
+	flex: 0 0 45%;
+	display: flex;
+	flex-direction: column;
 }
 
 /* Descripción */
 .home-description {
-    margin-bottom: 16px;
-    border: 3px solid #5c2703;
-    padding: 24px;
-    border-radius: 8px;
-    line-height: 1.6;
+	margin-bottom: 16px;
+	border: 3px solid #5c2703;
+	padding: 24px;
+	border-radius: 8px;
+	line-height: 1.6;
 }
 
 /* Lista de plataformas en formato horizontal */
