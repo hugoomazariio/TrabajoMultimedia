@@ -1,0 +1,22 @@
+.banner {
+  height: 100vh;
+  background: url("") center/cover no-repeat; /*Falta poner foto*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0); /*Para la opacidad, así deja ver bien las letras*/
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
