@@ -26,6 +26,15 @@ body {
 /* Imagen principal (izquierda) */
 .home-image {
     flex: 0 0 50%;
+    margin-left: 32px;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /* Contenedor de descripción y plataformas (derecha) */

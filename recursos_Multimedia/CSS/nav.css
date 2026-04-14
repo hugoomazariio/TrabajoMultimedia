@@ -18,6 +18,12 @@ nav div:first-child p {
     color: white;
 }
 
+nav img {
+    max-height: 48px;
+    width: auto;
+    display: block;
+}
+
 nav div:last-child a {
     margin-left: 20px;
     color: white;
