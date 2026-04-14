@@ -1,6 +1,6 @@
 .banner {
   height: 100vh;
-  background: url("../img/Imagen_Banner.png") center/cover no-repeat; /*Falta poner foto*/
+  background: url("../img/Imagen_Banner.png") center/cover no-repeat; 
   display: flex;
   justify-content: center;
   align-items: center;
