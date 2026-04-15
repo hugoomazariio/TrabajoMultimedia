@@ -83,3 +83,96 @@ body {
 .platform-link:hover {
 	transform: scale(1.15);
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .home-main-container {
+        gap: 16px;
+    }
+    
+    .home-image {
+        margin-left: 16px;
+    }
+    
+    .home-image img {
+        max-width: 400px;
+    }
+    
+    .platform-link img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-main-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .home-image {
+        flex: 1;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    .home-image img {
+        max-width: 100%;
+    }
+    
+    .home-description-container {
+        flex: 1;
+        margin: 0 16px;
+    }
+    
+    .home-description {
+        font-size: 14px;
+    }
+    
+    .platform-links {
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .platform-link img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .home-main-container {
+        gap: 12px;
+    }
+    
+    .home-image {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .home-description-container {
+        margin: 0 8px;
+    }
+    
+    .home-description {
+        padding: 16px;
+        font-size: 12px;
+        line-height: 1.4;
+        border-width: 2px;
+    }
+    
+    .platform-links {
+        gap: 4px;
+    }
+    
+    .platform-link img {
+        width: 45px;
+    }
+    
+    .platform-links span {
+        display: none;
+    }
+}

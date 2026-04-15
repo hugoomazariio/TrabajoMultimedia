@@ -87,3 +87,67 @@
         opacity: 0;
     }
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .personajes-section h2 {
+        font-size: 32px;
+    }
+    
+    .icono {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .iconos-container {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .personajes-section {
+        padding: 0 16px;
+    }
+    
+    .personajes-section h2 {
+        font-size: 28px;
+    }
+    
+    .personajes-divisor {
+        height: 35px;
+    }
+    
+    .icono {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .iconos-container {
+        gap: 12px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .personajes-section {
+        padding: 0 8px;
+    }
+    
+    .personajes-section h2 {
+        font-size: 22px;
+    }
+    
+    .personajes-divisor {
+        height: 25px;
+    }
+    
+    .icono {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .iconos-container {
+        gap: 8px;
+        margin-top: 10px;
+    }
+}

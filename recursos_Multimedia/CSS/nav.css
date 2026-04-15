@@ -36,3 +36,56 @@ nav div:last-child a {
 nav div:last-child a:hover {
     color: #f0c040;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    nav {
+        padding: 12px 20px;
+    }
+    
+    nav div:last-child a {
+        margin-left: 12px;
+        font-size: 15px;
+    }
+    
+    nav img {
+        max-height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 15px;
+    }
+    
+    nav div:last-child a {
+        margin-left: 8px;
+        font-size: 12px;
+    }
+    
+    nav img {
+        max-height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 8px 10px;
+    }
+    
+    nav div:last-child a {
+        margin-left: 4px;
+        font-size: 10px;
+        display: none;
+    }
+    
+    nav div:last-child a:nth-child(1),
+    nav div:last-child a:nth-child(4),
+    nav div:last-child a:nth-child(9) {
+        display: inline;
+    }
+    
+    nav img {
+        max-height: 28px;
+    }
+}

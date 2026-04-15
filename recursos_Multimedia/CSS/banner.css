@@ -20,3 +20,16 @@
   position: relative;
   z-index: 1;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 40vh;
+  }
+}
