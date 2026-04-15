@@ -244,6 +244,15 @@ section {
 	}
 }
 
+@media (max-width: 900px) {
+	.social-networks {
+		position: static;
+		margin-top: 16px;
+		bottom: auto;
+		right: auto;
+	}
+}
+
 @media (max-width: 768px) {
 	.contact-section {
 		padding: 30px 16px;
@@ -290,12 +299,12 @@ section {
 	.footer-brand h5 {
 		font-size: 12px;
 	}
-	
-	.social-networks {
-		position: static;
-		margin-top: 16px;
-		bottom: auto;
-		right: auto;
+}
+
+@media (max-width: 480px) {
+	.social-link img {
+		width: 35px;
+		height: 35px;
 	}
 }
 

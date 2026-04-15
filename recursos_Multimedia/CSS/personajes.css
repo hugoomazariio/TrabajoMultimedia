@@ -30,6 +30,14 @@
 	font-size: 40px;
 }
 
+/* Imagen del expediente responsive */
+.personajes-section .fade-in img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
 /* Contenedor de iconos característicos */
 .iconos-container {
 	display: flex;

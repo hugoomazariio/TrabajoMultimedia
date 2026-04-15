@@ -103,6 +103,37 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .home-main-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .home-image {
+        flex: 1;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    .home-image img {
+        max-width: 100%;
+    }
+    
+    .home-description-container {
+        flex: 1;
+        margin: 0 16px;
+    }
+    
+    .platform-links {
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .platform-link img {
+        width: 70px;
+    }
+}
+
 @media (max-width: 768px) {
     .home-main-container {
         flex-direction: column;
