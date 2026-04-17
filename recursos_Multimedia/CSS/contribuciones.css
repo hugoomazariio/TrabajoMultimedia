@@ -30,18 +30,18 @@
     height: auto;        /* Mantiene la proporción */
 }
 
-.linea {
+.EstandarLine {
     position: absolute;
     top: 50%;
     transform: translateY(-50%); /* 🔥 centrado vertical perfecto */
     width: 120px;
 }
 
-.linea.lineaEstandarIzq {
+.EstandarLine.lineaEstandarIzq {
     left: 0;
 }
 
-.linea.lineaEstandarDcho {
+.EstandarLine.lineaEstandarDcho {
     right: 0;
 }
 
@@ -56,7 +56,7 @@
 .version_cazarecompensas {
     display: block;
     margin: 0 auto;      /* Centrado clásico adicional */
-    width: 75%;
+    width: 80%;
     max-width: 100%;
     height: auto;        /* Mantiene la proporción */
 }
@@ -67,23 +67,23 @@
     margin: 0;
 }
 
-.titulo {
+.contribucionesTitulo {
     position: relative;
     display: inline-block;
 }
 
-.icono {
+.contribucionesIcon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 40px;
 }
 
-.icono.contribuciones_moneyizq {
+.contribucionesIcon.contribuciones_moneyizq {
     left: -60px;
 }
 
-.icono.contribuciones_moneydcho {
+.contribucionesIcon.contribuciones_moneydcho {
     right: -60px;
 }
 
