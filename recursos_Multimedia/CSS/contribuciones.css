@@ -15,11 +15,12 @@
     height: auto;        /* Mantiene la proporción */
 }
 
-/* Estilos para el divisor (floritura) */
+/* Estilos para las versiones */
 .version_estandar {
     display: block;
     margin: 0 auto;      /* Centrado clásico adicional */
-    max-width: 100%;     /* Evita que se salga en móviles */
+    width: 50%;
+    max-width: 100%;
     height: auto;        /* Mantiene la proporción */
 }
 
