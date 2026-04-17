@@ -7,18 +7,29 @@ let fadeInContainer = imgchange.parentElement; // Obtener el contenedor .fade-in
 
 // Función para cambiar imagen con transición fade
 function cambiarImagenConFade(nuevaRuta) {
-    // Agregar la animación de fade-in y fade-out
-    fadeInContainer.classList.add("fade-in");
+
+    // Asegurar que fade-in no está activo
+    fadeInContainer.classList.remove("fade-in");
+
+    // Activar fade-out
     fadeInContainer.classList.add("fade-out");
 
-    // Después de que termine el fade-out, cambiar la imagen y hacer fade-in
+    // Esperar a que termine el fade-out
     setTimeout(function () {
+
+        // Cambiar imagen
         imgchange.src = nuevaRuta;
-        
+
+        // Forzar reflow (Safari lo necesita)
+        void fadeInContainer.offsetWidth;
+
+        // Quitar fade-out y activar fade-in
         fadeInContainer.classList.remove("fade-out");
         fadeInContainer.classList.add("fade-in");
-    }, 800); // 800ms coincide con la duración de la animación
+
+    }, 800);
 }
+
 
 btnPJ1.onclick = function () {
     cambiarImagenConFade("recursos_Multimedia/img/Personajes_Cazarrecompensas.jpg");
