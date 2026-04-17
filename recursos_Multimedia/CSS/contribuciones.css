@@ -16,10 +16,47 @@
 }
 
 /* Estilos para las versiones */
-.versiones {
+
+.estandar {
+    position: relative;
+    text-align: center;
+}
+
+.version_estandar {
     display: block;
     margin: 0 auto;      /* Centrado clásico adicional */
     width: 65%;
+    max-width: 100%;
+    height: auto;        /* Mantiene la proporción */
+}
+
+.linea {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* 🔥 centrado vertical perfecto */
+    width: 120px;
+}
+
+.linea.lineaEstandarIzq {
+    left: 0;
+}
+
+.linea.lineaEstandarDcho {
+    right: 0;
+}
+
+
+.version_deluxe {
+    display: block;
+    margin: 0 auto;      /* Centrado clásico adicional */
+    width: 70%;
+    max-width: 100%;
+    height: auto;        /* Mantiene la proporción */
+}
+.version_cazarecompensas {
+    display: block;
+    margin: 0 auto;      /* Centrado clásico adicional */
+    width: 75%;
     max-width: 100%;
     height: auto;        /* Mantiene la proporción */
 }
@@ -28,6 +65,26 @@
 .contribuciones-section h2 {
     font-size: 40px;     /* Para que coincida con Personajes */
     margin: 0;
+}
+
+.titulo {
+    position: relative;
+    display: inline-block;
+}
+
+.icono {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+}
+
+.icono.contribuciones_moneyizq {
+    left: -60px;
+}
+
+.icono.contribuciones_moneydcho {
+    right: -60px;
 }
 
 /* Responsive Design */
@@ -50,10 +107,6 @@
     .floritura {
         max-width: 90%;
     }
-
-    .versiones {
-        max-width: 100%;
-    }
 }
 
 @media (max-width: 480px) {
@@ -70,7 +123,13 @@
         max-width: 85%;
     }
 
-    .versiones {
+    .version_estandar {
+        max-width: 95%;
+    }
+    .version_deluxe {
+        max-width: 95%;
+    }
+    .version_cazarecompensas {
         max-width: 95%;
     }
 }
