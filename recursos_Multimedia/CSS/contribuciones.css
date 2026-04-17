@@ -119,11 +119,11 @@
 }
 
 .contribucionesIcon.contribuciones_moneyizq {
-    left: -60px;
+    left: -80px;
 }
 
 .contribucionesIcon.contribuciones_moneydcho {
-    right: -60px;
+    right: -80px;
 }
 
 /* Responsive Design */
@@ -144,7 +144,7 @@
     }
 
     .contribucionesIcon {
-    max-width: 95%;
+    width: 60px;
 }
     
     .floritura {
@@ -152,13 +152,13 @@
     }
 
     .EstandarLine {
-        max-width: 90%;
+        width: 120px;
     }
     .DeluxeLine {
-        max-width: 90%;
+        width: 120px;
     }
     .CazaRecLine {
-        max-width: 90%;
+        width: 120px;
     }
 }
 
@@ -173,21 +173,21 @@
     }
 
     .contribucionesIcon {
-    max-width: 90%;
+    width: 40px;
 }
     
     .floritura {
-        max-width: 85%;
+        width: 90px;
     }
 
     .EstandarLine {
-        max-width: 85%;
+        width: 90px;
     }
     .DeluxeLine {
-        max-width: 85%;
+        width: 90px;
     }
     .CazaRecLine {
-        max-width: 85%;
+        width: 90px;
 
     .version_estandar {
         max-width: 95%;
