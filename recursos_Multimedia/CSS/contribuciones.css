@@ -119,17 +119,26 @@
 }
 
 .contribucionesIcon.contribuciones_moneyizq {
-    left: -80px;
+    left: -100px;
 }
 
 .contribucionesIcon.contribuciones_moneydcho {
-    right: -80px;
+    right: -100px;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
     .contribuciones-section h2 {
         font-size: 32px;
+    }
+    .EstandarLine {
+        width: 120px;
+    }
+    .DeluxeLine {
+        width: 120px;
+    }
+    .CazaRecLine {
+        width: 120px;
     }
 }
 
@@ -198,4 +207,26 @@
     .version_cazarecompensas {
         max-width: 95%;
     }
+        .EstandarLine.lineaEstandarIzq {
+    left: -20;
+}
+
+.EstandarLine.lineaEstandarDcho {
+    right: -20;
+}
+.DeluxeLine.lineaDeluxeIzq {
+    left: -20;
+}
+
+.DeluxeLine.lineaDeluxeDcho {
+    right: -20;
+}
+        .CazaRecLine.lineaCazaRecIzq {
+    left: -20;
+}
+
+.CazaRecLine.lineaCazaRecDcho {
+    right: -20;
+}
+        
 }
