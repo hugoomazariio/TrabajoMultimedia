@@ -208,21 +208,21 @@
         max-width: 95%;
     }
         .EstandarLine.lineaEstandarIzq {
-    left: -20;
+    left: -20px;
 }
 
 .EstandarLine.lineaEstandarDcho {
-    right: -20;
+    right: -20px;
 }
 .DeluxeLine.lineaDeluxeIzq {
-    left: -20;
+    left: -20px;
 }
 
 .DeluxeLine.lineaDeluxeDcho {
-    right: -20;
+    right: -20px;
 }
         .CazaRecLine.lineaCazaRecIzq {
-    left: -20;
+    left: -20px;
 }
 
 .CazaRecLine.lineaCazaRecDcho {
