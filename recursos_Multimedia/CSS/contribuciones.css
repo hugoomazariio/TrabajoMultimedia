@@ -15,6 +15,14 @@
     height: auto;        /* Mantiene la proporción */
 }
 
+/* Estilos para el divisor (floritura) */
+.version_estandar {
+    display: block;
+    margin: 0 auto;      /* Centrado clásico adicional */
+    max-width: 100%;     /* Evita que se salga en móviles */
+    height: auto;        /* Mantiene la proporción */
+}
+
 /* Estilos para el H2 de esta sección */
 .contribuciones-section h2 {
     font-size: 40px;     /* Para que coincida con Personajes */
@@ -41,6 +49,10 @@
     .floritura {
         max-width: 90%;
     }
+
+    .version-estandar {
+        max-width: 90%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -54,6 +66,10 @@
     }
     
     .floritura {
+        max-width: 85%;
+    }
+
+    .version-estandar {
         max-width: 85%;
     }
 }
