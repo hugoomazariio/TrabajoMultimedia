@@ -16,10 +16,10 @@
 }
 
 /* Estilos para las versiones */
-.version_estandar {
+.versiones {
     display: block;
     margin: 0 auto;      /* Centrado clásico adicional */
-    width: 50%;
+    width: 65%;
     max-width: 100%;
     height: auto;        /* Mantiene la proporción */
 }
@@ -51,8 +51,8 @@
         max-width: 90%;
     }
 
-    .version-estandar {
-        max-width: 90%;
+    .versiones {
+        max-width: 100%;
     }
 }
 
@@ -70,7 +70,7 @@
         max-width: 85%;
     }
 
-    .version-estandar {
-        max-width: 85%;
+    .versiones {
+        max-width: 95%;
     }
 }
