@@ -33,8 +33,8 @@
 .EstandarLine {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* 🔥 centrado vertical perfecto */
-    width: 120px;
+    transform: translateY(-50%); 
+    width: 330px;
 }
 
 .EstandarLine.lineaEstandarIzq {
@@ -45,7 +45,10 @@
     right: 0;
 }
 
-
+.deluxe {
+    position: relative;
+    text-align: center;
+}
 .version_deluxe {
     display: block;
     margin: 0 auto;      /* Centrado clásico adicional */
@@ -53,12 +56,48 @@
     max-width: 100%;
     height: auto;        /* Mantiene la proporción */
 }
+
+.DeluxeLine {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 330px;
+}
+
+.DeluxeLine.lineaDeluxeIzq {
+    left: 0;
+}
+
+.DeluxeLine.lineaDeluxeDcho {
+    right: 0;
+}
+
+
+.versCazarecompensas {
+    position: relative;
+    text-align: center;
+}
 .version_cazarecompensas {
     display: block;
     margin: 0 auto;      /* Centrado clásico adicional */
     width: 80%;
     max-width: 100%;
     height: auto;        /* Mantiene la proporción */
+}
+
+.CazaRecLine {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 330px;
+}
+
+.CazaRecLine.lineaCazaRecIzq {
+    left: 0;
+}
+
+.CazaRecLine.lineaCazaRecDcho {
+    right: 0;
 }
 
 /* Estilos para el H2 de esta sección */
@@ -76,7 +115,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;
+    width: 80px;
 }
 
 .contribucionesIcon.contribuciones_moneyizq {
@@ -103,8 +142,22 @@
     .contribuciones-section h2 {
         font-size: 28px;
     }
+
+    .contribucionesIcon {
+    max-width: 95%;
+}
     
     .floritura {
+        max-width: 90%;
+    }
+
+    .EstandarLine {
+        max-width: 90%;
+    }
+    .DeluxeLine {
+        max-width: 90%;
+    }
+    .CazaRecLine {
         max-width: 90%;
     }
 }
@@ -118,10 +171,23 @@
     .contribuciones-section h2 {
         font-size: 22px;
     }
+
+    .contribucionesIcon {
+    max-width: 90%;
+}
     
     .floritura {
         max-width: 85%;
     }
+
+    .EstandarLine {
+        max-width: 85%;
+    }
+    .DeluxeLine {
+        max-width: 85%;
+    }
+    .CazaRecLine {
+        max-width: 85%;
 
     .version_estandar {
         max-width: 95%;
