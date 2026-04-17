@@ -2,17 +2,23 @@
 .contribuciones-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Esto centra todo horizontalmente */
-    gap: 16px;           /* Espaciado constante entre elementos */
-    text-align: center;  /* Asegura que los párrafos también se centren */
+    align-items: center;
+    /* Esto centra todo horizontalmente */
+    gap: 16px;
+    /* Espaciado constante entre elementos */
+    text-align: center;
+    /* Asegura que los párrafos también se centren */
 }
 
 /* Estilos para el divisor (floritura) */
 .floritura {
     display: block;
-    margin: 0 auto;      /* Centrado clásico adicional */
-    max-width: 100%;     /* Evita que se salga en móviles */
-    height: auto;        /* Mantiene la proporción */
+    margin: 0 auto;
+    /* Centrado clásico adicional */
+    max-width: 100%;
+    /* Evita que se salga en móviles */
+    height: auto;
+    /* Mantiene la proporción */
 }
 
 /* Estilos para las versiones */
@@ -24,16 +30,18 @@
 
 .version_estandar {
     display: block;
-    margin: 0 auto;      /* Centrado clásico adicional */
+    margin: 0 auto;
+    /* Centrado clásico adicional */
     width: 65%;
     max-width: 100%;
-    height: auto;        /* Mantiene la proporción */
+    height: auto;
+    /* Mantiene la proporción */
 }
 
 .EstandarLine {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     width: 330px;
 }
 
@@ -49,18 +57,21 @@
     position: relative;
     text-align: center;
 }
+
 .version_deluxe {
     display: block;
-    margin: 0 auto;      /* Centrado clásico adicional */
+    margin: 0 auto;
+    /* Centrado clásico adicional */
     width: 70%;
     max-width: 100%;
-    height: auto;        /* Mantiene la proporción */
+    height: auto;
+    /* Mantiene la proporción */
 }
 
 .DeluxeLine {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     width: 330px;
 }
 
@@ -77,18 +88,21 @@
     position: relative;
     text-align: center;
 }
+
 .version_cazarecompensas {
     display: block;
-    margin: 0 auto;      /* Centrado clásico adicional */
+    margin: 0 auto;
+    /* Centrado clásico adicional */
     width: 80%;
     max-width: 100%;
-    height: auto;        /* Mantiene la proporción */
+    height: auto;
+    /* Mantiene la proporción */
 }
 
 .CazaRecLine {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     width: 330px;
 }
 
@@ -102,7 +116,8 @@
 
 /* Estilos para el H2 de esta sección */
 .contribuciones-section h2 {
-    font-size: 40px;     /* Para que coincida con Personajes */
+    font-size: 40px;
+    /* Para que coincida con Personajes */
     margin: 0;
 }
 
@@ -131,12 +146,15 @@
     .contribuciones-section h2 {
         font-size: 32px;
     }
+
     .EstandarLine {
         width: 120px;
     }
+
     .DeluxeLine {
         width: 120px;
     }
+
     .CazaRecLine {
         width: 120px;
     }
@@ -147,15 +165,15 @@
         padding: 0 16px;
         gap: 12px;
     }
-    
+
     .contribuciones-section h2 {
         font-size: 28px;
     }
 
     .contribucionesIcon {
-    width: 60px;
-}
-    
+        width: 60px;
+    }
+
     .floritura {
         max-width: 90%;
     }
@@ -163,9 +181,11 @@
     .EstandarLine {
         width: 120px;
     }
+
     .DeluxeLine {
         width: 120px;
     }
+
     .CazaRecLine {
         width: 120px;
     }
@@ -176,15 +196,15 @@
         padding: 0 8px;
         gap: 8px;
     }
-    
+
     .contribuciones-section h2 {
         font-size: 22px;
     }
 
     .contribucionesIcon {
-    width: 40px;
-}
-    
+        width: 40px;
+    }
+
     .floritura {
         width: 90px;
     }
@@ -192,41 +212,49 @@
     .EstandarLine {
         width: 90px;
     }
+
     .DeluxeLine {
         width: 90px;
     }
+
     .CazaRecLine {
         width: 90px;
 
-    .version_estandar {
-        max-width: 95%;
-    }
-    .version_deluxe {
-        max-width: 95%;
-    }
-    .version_cazarecompensas {
-        max-width: 95%;
-    }
+        .version_estandar {
+            max-width: 95%;
+        }
+
+        .version_deluxe {
+            max-width: 95%;
+        }
+
+        .version_cazarecompensas {
+            max-width: 95%;
+        }
+
         .EstandarLine.lineaEstandarIzq {
-    left: -20px;
-}
+            left: -20px;
+        }
 
-.EstandarLine.lineaEstandarDcho {
-    right: -20px;
-}
-.DeluxeLine.lineaDeluxeIzq {
-    left: -20px;
-}
+        .EstandarLine.lineaEstandarDcho {
+            right: -20px;
+        }
 
-.DeluxeLine.lineaDeluxeDcho {
-    right: -20px;
-}
+        .DeluxeLine.lineaDeluxeIzq {
+            left: -20px;
+        }
+
+        .DeluxeLine.lineaDeluxeDcho {
+            right: -20px;
+        }
+
         .CazaRecLine.lineaCazaRecIzq {
-    left: -20px;
-}
+            left: -20px;
+        }
 
-.CazaRecLine.lineaCazaRecDcho {
-    right: -20;
-}
-        
+        .CazaRecLine.lineaCazaRecDcho {
+            right: -20;
+        }
+
+    }
 }
