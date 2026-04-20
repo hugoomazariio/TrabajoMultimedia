@@ -128,6 +128,47 @@
     right: -75px;
 }
 
+
+.donacion-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* 🔥 bordes redondeados */
+    background: #f9f9f9;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.donacion-container h3 {
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+/* Caja del input */
+.input-group {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* 🔥 bordes redondeados internos */
+    overflow: hidden; /* 🔥 para que el borde sea uniforme */
+    background: white;
+}
+
+/* € */
+.simbolo {
+    padding: 10px 12px;
+    background: #eee;
+    border-right: 1px solid #ccc;
+}
+
+/* input */
+.input-group input {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .contribuciones-section h2 {
