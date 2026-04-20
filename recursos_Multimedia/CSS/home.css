@@ -51,7 +51,7 @@ body {
     padding: 24px;
     border-radius: 8px;
     line-height: 1.6;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 /* Lista de plataformas en formato horizontal */
@@ -64,7 +64,7 @@ body {
 	gap: 12px;
 	align-items: center;
 	justify-content: flex-end;
-	margin-top: 24px;
+	margin-top: 25px;
 }
 
 /* Estilos de los enlaces de plataformas con iconos */
