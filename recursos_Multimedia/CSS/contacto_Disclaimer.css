@@ -85,7 +85,7 @@ footer {
 
 /* Redes sociales en la esquina inferior derecha */
 .social-networks {
-	position: absolute;
+	position: relative;
 	bottom: 16px;
 	right: 16px;
 }
