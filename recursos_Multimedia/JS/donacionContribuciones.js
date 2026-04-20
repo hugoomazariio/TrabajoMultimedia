@@ -1,4 +1,5 @@
 <script>
+    console.log("JS cargado");
 const input = document.getElementById("ContrMonto");
 const boton = document.getElementById("ContrBtn");
 const grupo = document.getElementById("ContrGrupo");
