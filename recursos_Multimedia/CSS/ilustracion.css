@@ -1,0 +1,36 @@
+/* Estilos para la sección ILUSTRACIÓN */
+
+.ilustracion-section {
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	position: relative;
+}
+
+.ilustracion-section img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+	.ilustracion-section {
+		height: 40vh;
+	}
+}
+
+@media (max-width: 768px) {
+	.ilustracion-section {
+		height: 30vh;
+	}
+}
+
+@media (max-width: 480px) {
+	.ilustracion-section {
+		height: 20vh;
+	}
+}
