@@ -31,7 +31,7 @@ body {
 
 .home-image img {
     width: 100%;
-    max-width: 520px;
+    max-width: 700px;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -51,6 +51,7 @@ body {
     padding: 24px;
     border-radius: 8px;
     line-height: 1.6;
+    font-size: 25px;
 }
 
 /* Lista de plataformas en formato horizontal */
