@@ -130,13 +130,15 @@
 
 
 .donacion-container {
-    width: 750px;
+    width: 90%;
+    max-width: 750px;
     padding: 40px;
     border: 1px solid #ccc;
     border-radius: 15px;
     background: #f9f9f9;
     font-family: Arial, sans-serif;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 0 auto;
 }
 
 .donacion-container h3 {
@@ -211,6 +213,11 @@ button.disabled {
     .CazaRecLine {
         width: 120px;
     }
+
+    .donacion-container {
+        width: 90%;
+        max-width: 700px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -242,6 +249,22 @@ button.disabled {
     .CazaRecLine {
         width: 120px;
     }
+
+    .donacion-container {
+        width: 95%;
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    .donacion-container h3 {
+        font-size: 18px;
+    }
+
+    .input-group input,
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -272,42 +295,68 @@ button.disabled {
 
     .CazaRecLine {
         width: 90px;
+    }
 
-        .version_estandar {
-            max-width: 95%;
-        }
+    .version_estandar {
+        max-width: 95%;
+    }
 
-        .version_deluxe {
-            max-width: 95%;
-        }
+    .version_deluxe {
+        max-width: 95%;
+    }
 
-        .version_cazarecompensas {
-            max-width: 95%;
-        }
+    .version_cazarecompensas {
+        max-width: 95%;
+    }
 
-        .EstandarLine.lineaEstandarIzq {
-            left: -20px;
-        }
+    .EstandarLine.lineaEstandarIzq {
+        left: -20px;
+    }
 
-        .EstandarLine.lineaEstandarDcho {
-            right: -20px;
-        }
+    .EstandarLine.lineaEstandarDcho {
+        right: -20px;
+    }
 
-        .DeluxeLine.lineaDeluxeIzq {
-            left: -20px;
-        }
+    .DeluxeLine.lineaDeluxeIzq {
+        left: -20px;
+    }
 
-        .DeluxeLine.lineaDeluxeDcho {
-            right: -20px;
-        }
+    .DeluxeLine.lineaDeluxeDcho {
+        right: -20px;
+    }
 
-        .CazaRecLine.lineaCazaRecIzq {
-            left: -20px;
-        }
+    .CazaRecLine.lineaCazaRecIzq {
+        left: -20px;
+    }
 
-        .CazaRecLine.lineaCazaRecDcho {
-            right: -20px;
-        }
+    .CazaRecLine.lineaCazaRecDcho {
+        right: -20px;
+    }
 
+    .donacion-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .donacion-container h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .simbolo {
+        border-right: none;
+        border-bottom: 2px solid #ccc;
+        padding: 12px;
+    }
+
+    .input-group input,
+    button {
+        font-size: 14px;
+        padding: 12px;
     }
 }

@@ -51,7 +51,7 @@ body {
     padding: 24px;
     border-radius: 8px;
     line-height: 1.6;
-    font-size: 24px;
+    font-size: clamp(16px, 4vw, 24px);
 }
 
 /* Lista de plataformas en formato horizontal */
@@ -64,7 +64,8 @@ body {
 	gap: 12px;
 	align-items: center;
 	justify-content: flex-end;
-	margin-top: 25px;
+	margin-top: 20px;
+    margin-right: 10px;
 }
 
 /* Estilos de los enlaces de plataformas con iconos */
@@ -97,6 +98,10 @@ body {
     
     .home-image img {
         max-width: 400px;
+    }
+    
+    .home-description {
+        font-size: clamp(14px, 3.5vw, 20px);
     }
     
     .platform-link img {
@@ -157,7 +162,8 @@ body {
     }
     
     .home-description {
-        font-size: 14px;
+        font-size: clamp(13px, 3vw, 16px);
+        padding: 18px;
     }
     
     .platform-links {
@@ -191,14 +197,21 @@ body {
     
     .home-description {
         padding: 16px;
-        font-size: 12px;
+        font-size: clamp(12px, 2.5vw, 14px);
         line-height: 1.4;
         border-width: 2px;
     }
     
     .platform-links {
         gap: 4px;
+        flex-wrap: wrap;
     }
+
+    .platform-link img {
+        width: 50px;
+    }
+}
+@media (max-width: 320px) { 
     
     .platform-link img {
         width: 45px;
