@@ -5,10 +5,12 @@ nav {
     align-items: center;
     padding: 15px 40px;
     background-color: #111;
-    border-bottom: 3px solid #5c2703;
+    border-bottom: 3px solid #000;
     position: sticky; /* Fija la barra de navegación en la parte superior */
     top: 0;
     z-index: 1000; 
+    background: url("../img/Fondo_PapelVerde.jpg") center/cover no-repeat; 
+
 }
 
 .logo {
@@ -60,16 +62,35 @@ margin: 3px
 /* Responsive Design */
 @media (max-width: 1024px) {
     nav {
-        padding: 12px 20px;
+        flex-wrap: wrap;
     }
     
-    nav div:last-child a {
-        margin-left: 12px;
-        font-size: 15px;
+    .hamburger{
+        display: flex;
+        flex-wrap: wrap;
     }
     
-    nav img {
-        max-height: 40px;
+    .logo{
+       max-height: 28px;
+    }
+
+    .nav-links{
+        display: none;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+
+    .nav-links li{
+        flex-basis: 100%;;
+    }
+
+    .nav-links a {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .nav-links a:hover{
+        color: #f0c040;
     }
 }
 
@@ -109,22 +130,34 @@ margin: 3px
 
 @media (max-width: 480px) {
     nav {
-        padding: 8px 10px;
+        flex-wrap: wrap;
     }
     
-    nav div:last-child a {
-        margin-left: 4px;
-        font-size: 10px;
+    .hamburger{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .logo{
+       max-height: 28px;
+    }
+
+    .nav-links{
         display: none;
+        flex-basis: 100%;
+        flex-wrap: wrap;
     }
-    
-    nav div:last-child a:nth-child(1),
-    nav div:last-child a:nth-child(4),
-    nav div:last-child a:nth-child(9) {
-        display: inline;
+
+    .nav-links li{
+        flex-basis: 100%;;
     }
-    
-    nav img {
-        max-height: 28px;
+
+    .nav-links a {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .nav-links a:hover{
+        color: #f0c040;
     }
 }
