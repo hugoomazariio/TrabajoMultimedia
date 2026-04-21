@@ -89,3 +89,7 @@ nav div:last-child a:hover {
         max-height: 28px;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
