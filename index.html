@@ -5,41 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Path To Nowhere</title>
-    <link rel="icon" type="image/x-icon" href="./recursos_Multimedia/img/LogotipoTeamLemon_Negro.png"><!-- Favicon del sitio -->
+    <link rel="icon" type="image/x-icon" href="./recursos_Multimedia/img/LogotipoTeamLemon_Negro.png">
+    <!-- Favicon del sitio -->
+    <link rel="stylesheet" href="./recursos_Multimedia/CSS/reset.css">
+    <!-- Hace que funcione para cualquier browser el CSS, TIENE QUE ESTAR EN LA PRIMERA LINEA -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/home.css"> <!-- Estilos de la sección Home -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/personajes.css"> <!-- Estilos de la sección Personajes -->
-    <link rel="stylesheet" href="./recursos_Multimedia/CSS/contacto_Disclaimer.css"><!-- Estilos de contacto y footer -->
-    <link rel="stylesheet" href="./recursos_Multimedia/CSS/contribuciones.css"><!-- Estilos de la sección Contribuciones -->
+    <link rel="stylesheet" href="./recursos_Multimedia/CSS/contacto_Disclaimer.css">
+    <!-- Estilos de contacto y footer -->
+    <link rel="stylesheet" href="./recursos_Multimedia/CSS/contribuciones.css">
+    <!-- Estilos de la sección Contribuciones -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/banner.css"> <!-- Estilos del banner -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/nav.css"> <!-- Estilos de la barra de navegación -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/historia.css"> <!-- Estilos de la sección Historia -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/gameplay.css"> <!-- Estilos de la sección Gameplay -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/ilustracion.css"> <!-- Estilos de la sección Ilustración -->
+
 </head>
 
 <body>
     <!-- Aquí comienza la página. Se empieza por la barra de navegación. Falta incluir el logo del equipo y ponerlo bonito. -->
     <nav> <!-- Aquí va la barra de navegación. Está muy esquematizada, hay que ponerlo bonito.-->
         <!-- Logo / Imagen a la izquierda -->
-        <div>
-            <a>
-                <img alt="Team Lemon Logo" src="./recursos_Multimedia/img/LogotipoTeamLemon_Blanco.png">
-            </a>
+        <div class="logo">
+            <img alt="Team Lemon Logo" src="./recursos_Multimedia/img/LogotipoTeamLemon_Blanco.png">
+            <h3>Team Lemon</h3>
         </div>
-
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <!-- Links de navegación a la derecha -->
-        <div>
-            <a href="#home">Home</a>
-            <a href="#historia">Historia</a>
-            <a href="#gameplay">Gameplay</a>
-            <a href="#personajes">Personajes</a>
-            <a href="#preguntas">Preguntas</a>
-            <a href="#contribuciones">Contribuciones</a>
-            <a href="#objetivos">Objetivos</a>
-            <a href="#equipo">Equipo</a>
-            <a href="#comentarios">Comentarios</a>
-            <a href="#contacto">Contacto</a>
-        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#gameplay">Gameplay</a></li>
+            <li><a href="#personajes">Personajes</a></li>
+            <li><a href="#preguntas">Preguntas</a></li>
+            <li><a href="#contribuciones">Contribuciones</a></li>
+            <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
     </nav>
 
     <!-- Aquí ya empieza el contenido, ahora va el banner junto descripción.-->
@@ -48,7 +56,7 @@
         <!-- Esta seccion es la que se ve HOME.
         Aquí va el banner, con la imagen del juego, el título, el lema. 
         Luego Imagen, descripción, plataformas y vídeo-->
-        <section id="home" class="banner">
+        <section class="banner" id="home">
             <div class="banner-content">
                 <h1>TÍTULO</h1>
                 <p>LEMA</p>
@@ -66,7 +74,8 @@
                 <div class="home-description-container">
                     <div class="home-description">Path to Nowhere es un videojuego western de acción/aventura en el que
                         podrás investigar todo el mundo que te rodea. Deberás de recopilar pistas y testimonios sobre el
-                        famoso criminal de la región, para conseguir darle caza y llevarte tu parte de la recompensa. <br>
+                        famoso criminal de la región, para conseguir darle caza y llevarte tu parte de la recompensa.
+                        <br>
                         Prepárate para dominar el arte de la investigación: <br>
                         • Haz las preguntas adecuadas o presiona al sospechoso hasta que confiese.<br>
                         • Si intentan escapar, dales caza y utiliza el lazo para que no huyan.<br>
@@ -100,23 +109,31 @@
         </section>
 
         <!-- Aquí va la sección de historia-->
-        <section id="historia" class="historia-section">
-            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Arriba.png" alt="Decoración" class="historia-divisor historia-divisor-top">
+        <section class="historia-section" id="historia">
+            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Arriba.png" alt="Decoración"
+                class="historia-divisor historia-divisor-top">
             <h2>HISTORIA</h2>
-            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Abajo.png" alt="Decoración" class="historia-divisor historia-divisor-bottom">
+            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Abajo.png" alt="Decoración"
+                class="historia-divisor historia-divisor-bottom">
             <div class="historia-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloribus animi distinctio aliquid dolore, iste earum reiciendis laborum ullam expedita dolor ratione nam ex deserunt beatae debitis libero vitae voluptatum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloribus animi distinctio aliquid dolore,
+                iste earum reiciendis laborum ullam expedita dolor ratione nam ex deserunt beatae debitis libero vitae
+                voluptatum?
             </div>
         </section>
 
         <!-- Aquí va la sección de Gameplay-->
-        <section id="gameplay" class="gameplay-section">
-            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Arriba.png" alt="Decoración" class="gameplay-divisor gameplay-divisor-top">
+        <section class="gameplay-section" id="gameplay">
+            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Arriba.png" alt="Decoración"
+                class="gameplay-divisor gameplay-divisor-top">
             <h2>GAMEPLAY</h2>
-            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Abajo.png" alt="Decoración" class="gameplay-divisor gameplay-divisor-bottom">
+            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Abajo.png" alt="Decoración"
+                class="gameplay-divisor gameplay-divisor-bottom">
             <div class="gameplay-container">
                 <div class="gameplay-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nobis natus nemo quae iure nihil maxime illo debitis delectus dicta expedita vel error, blanditiis quas labore officia adipisci? Error, asperiores.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nobis natus nemo quae iure nihil
+                    maxime illo debitis delectus dicta expedita vel error, blanditiis quas labore officia adipisci?
+                    Error, asperiores.
                 </div>
                 <div class="gameplay-image">
                     <img src="./recursos_Multimedia/img/imagen_Placeholder.png" alt="Escenario de Gameplay">
@@ -126,7 +143,7 @@
 
         <!-- Aquí va la sección de personajes-->
 
-        <section id="personajes" class="personajes-section">
+        <section class="personajes-section" id="personajes">
             <img src="./recursos_Multimedia/img/DivisorLineaDoble_Arriba.png" alt="Decoración"
                 class="personajes-divisor personajes-divisor-top">
             <h2>PERSONAJES</h2>
@@ -160,7 +177,7 @@
         </section>
 
         <!-- Aquí va la ilustración que cambia a las preguntas-->
-        <section id="ilustracion" class="ilustracion-section">
+        <section class="ilustracion-section">
             <img src="./recursos_Multimedia/img/Imagen_Banner2.png" alt="Banner">
         </section>
 
@@ -173,7 +190,7 @@
         </section>
 
         <!-- Aquí va la sección de las contribuciones. ESTA SECCIÓN VA A LA IZQUIERDA-->
-        <section id="contribuciones" class="contribuciones-section">
+        <section class="contribuciones-section" id="contribuciones">
             <div class="divisor-container">
                 <img alt="Divisor floritura" src="./recursos_Multimedia/img/DivisorFloritura.png" class="floritura">
             </div>
@@ -238,9 +255,9 @@
 
         <!-- Aquí va la sección de comentarios-->
 
-        <section id="comentarios">
+        <section>
             <h2>COMENTARIOS</h2>
-            <div></div> class="contact-wrapper">
+            <div class="contact-wrapper">
                 <form> <!-- Aquí va el formulario de contacto.-->
                     <div class="input-with-label text-left">
                         <span>Tu mensaje:</span>
@@ -253,7 +270,7 @@
         </section>
 
         <!-- Aquí va la sección de contacto-->
-        <div id="contanto" class="contact-section">
+        <div class="contact-section" id="contacto">
             <h1>CONTACTO</h1>
             <h4>
                 Por favor, rellena el formulario de abajo y nuestro equipo se pondrá en contacto contigo en breve.
@@ -309,8 +326,13 @@
     </div>
 
 
-    <script src="./recursos_Multimedia/JS/cambioExpedientePersonaje.js"></script> <!-- Script para cambiar el expediente del personaje -->
-    <script src="./recursos_Multimedia/JS/donacionContribuciones.js"></script> <!-- Script para la sección de donaciones y contribuciones -->
+    <script src="./recursos_Multimedia/JS/cambioExpedientePersonaje.js"></script>
+    <!-- Script para cambiar el expediente del personaje -->
+    <script src="./recursos_Multimedia/JS/donacionContribuciones.js"></script>
+    <!-- Script para la sección de donaciones y contribuciones -->
+    <script src="./recursos_Multimedia/JS/navegacion.js"></script>
+    <!-- Script para la barra de navegación -->
+
 </body>
 
 </html>
