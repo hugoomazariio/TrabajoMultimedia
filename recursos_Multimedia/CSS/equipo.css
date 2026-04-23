@@ -10,15 +10,10 @@
     max-width: 95%;
     min-height: 520px;
     padding: 20px 25px 30px;
-
     background-image: url("./recursos_Multimedia/img/Fondo_PapelVerde.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .equipo-titulo {
@@ -28,29 +23,31 @@
     font-size: 2rem;
 }
 
-/* LAS DOS FILAS */
-.fila-equipo {
+/* AQUÍ ESTÁ EL CAMBIO IMPORTANTE */
+.equipo-grid {
+    display: grid !important;
+    grid-template-columns: repeat(8, 1fr);
+    row-gap: 26px;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: start;
     width: 100%;
-    display: flex !important;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    flex-wrap: nowrap;
 }
 
-.fila-superior {
-    margin-bottom: 30px;
-}
+/* 4 ARRIBA */
+.miembro-1 { grid-column: 1 / span 2; grid-row: 1; }
+.miembro-2 { grid-column: 3 / span 2; grid-row: 1; }
+.miembro-3 { grid-column: 5 / span 2; grid-row: 1; }
+.miembro-4 { grid-column: 7 / span 2; grid-row: 1; }
 
-.fila-inferior {
-    width: 75%;
-    margin: 0 auto;
-}
+/* 3 ABAJO */
+.miembro-5 { grid-column: 2 / span 2; grid-row: 2; }
+.miembro-6 { grid-column: 4 / span 2; grid-row: 2; }
+.miembro-7 { grid-column: 6 / span 2; grid-row: 2; }
 
-/* CADA MIEMBRO */
 .miembro {
-    flex: 0 0 140px;
-    display: flex;
+    width: 120px;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -67,4 +64,16 @@
     width: 95px;
     height: auto;
     display: block;
+}
+
+@media (max-width: 900px) {
+    .equipo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .miembro-1, .miembro-2, .miembro-3, .miembro-4,
+    .miembro-5, .miembro-6, .miembro-7 {
+        grid-column: auto;
+        grid-row: auto;
+    }
 }
