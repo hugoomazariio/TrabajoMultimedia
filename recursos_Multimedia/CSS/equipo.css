@@ -1,9 +1,4 @@
-.equipo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
-}
+
 .equipo-section {
 	/* La sección de contacto usa papel verde */
 	background: url("../img/Fondo_PapelVerde.jpg") center/cover no-repeat;
