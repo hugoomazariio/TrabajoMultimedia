@@ -1,56 +1,55 @@
 .equipo {
     width: 100%;
-    padding: 40px 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.equipo-titulo {
-    margin: 0 0 20px 0;
-    text-align: center;
-    color: #2f1d12;
-    font-size: 2rem;
-    letter-spacing: 2px;
+    justify-content: center;
+    padding: 40px 0;
 }
 
 .equipo-fondo {
-    width: 900px;
+    width: 1100px;
     max-width: 95%;
-    min-height: 650px;
-    padding: 30px 20px 40px 20px;
+    min-height: 520px;
+    padding: 20px 25px 30px;
 
+    background-image: url("./recursos_Multimedia/img/Fondo_PapelVerde.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
 }
 
-/* FILAS */
+.equipo-titulo {
+    margin: 0 0 20px;
+    text-align: center;
+    color: #2f1d12;
+    font-size: 2rem;
+}
+
+/* LAS DOS FILAS */
 .fila-equipo {
     width: 100%;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: flex-start;
-    gap: 28px;
+    gap: 30px;
+    flex-wrap: nowrap;
 }
 
 .fila-superior {
-    margin-top: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .fila-inferior {
-    margin-top: 10px;
+    width: 75%;
+    margin: 0 auto;
 }
 
 /* CADA MIEMBRO */
 .miembro {
-    width: 150px;
+    flex: 0 0 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,62 +57,14 @@
 }
 
 .boceto {
-    width: 90px;
+    width: 70px;
     height: auto;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .info-miembro {
-    width: 140px;
+    width: 95px;
     height: auto;
     display: block;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .equipo-fondo {
-        width: 95%;
-        min-height: auto;
-        padding: 25px 15px 30px 15px;
-    }
-
-    .fila-equipo {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .miembro {
-        width: 130px;
-    }
-
-    .boceto {
-        width: 78px;
-    }
-
-    .info-miembro {
-        width: 120px;
-    }
-}
-
-@media (max-width: 600px) {
-    .equipo-titulo {
-        font-size: 1.5rem;
-    }
-
-    .fila-equipo {
-        gap: 16px;
-    }
-
-    .miembro {
-        width: 110px;
-    }
-
-    .boceto {
-        width: 68px;
-    }
-
-    .info-miembro {
-        width: 105px;
-    }
 }
