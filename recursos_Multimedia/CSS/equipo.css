@@ -1,34 +1,54 @@
 .equipo {
+    width: 100%;
+    padding: 40px 0;
     display: flex;
-    justify-content: center;
-    padding: 40px 20px;
-}
-
-.equipo-fondo {
-    width: min(100%, 1100px);
-    background-image: url("./recursos_Multimedia/img/Fondo_PapelVerde.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 30px 25px 40px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .equipo-titulo {
+    margin: 0 0 20px 0;
     text-align: center;
-    margin: 0 0 25px;
     color: #2f1d12;
     font-size: 2rem;
     letter-spacing: 2px;
 }
 
-.fila-equipo {
+.equipo-fondo {
+    width: 900px;
+    max-width: 95%;
+    min-height: 650px;
+    padding: 30px 20px 40px 20px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 25px;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
+/* FILAS */
+.fila-equipo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.fila-superior {
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.fila-inferior {
+    margin-top: 10px;
+}
+
+/* CADA MIEMBRO */
 .miembro {
     width: 150px;
     display: flex;
@@ -38,7 +58,7 @@
 }
 
 .boceto {
-    width: 85px;
+    width: 90px;
     height: auto;
     display: block;
     margin-bottom: 10px;
@@ -50,18 +70,21 @@
     display: block;
 }
 
-.fila-inferior {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
+/* RESPONSIVE */
 @media (max-width: 900px) {
+    .equipo-fondo {
+        width: 95%;
+        min-height: auto;
+        padding: 25px 15px 30px 15px;
+    }
+
     .fila-equipo {
         flex-wrap: wrap;
+        gap: 20px;
     }
 
     .miembro {
-        width: 140px;
+        width: 130px;
     }
 
     .boceto {
@@ -69,25 +92,21 @@
     }
 
     .info-miembro {
-        width: 130px;
+        width: 120px;
     }
 }
 
 @media (max-width: 600px) {
-    .equipo-fondo {
-        padding: 20px 15px 30px;
-    }
-
     .equipo-titulo {
         font-size: 1.5rem;
     }
 
     .fila-equipo {
-        gap: 18px;
+        gap: 16px;
     }
 
     .miembro {
-        width: 120px;
+        width: 110px;
     }
 
     .boceto {
@@ -95,12 +114,6 @@
     }
 
     .info-miembro {
-        width: 115px;
-    }
-}
-
-    .equipo-info {
-        grid-template-columns: 1fr;
-        gap: 18px;
+        width: 105px;
     }
 }
