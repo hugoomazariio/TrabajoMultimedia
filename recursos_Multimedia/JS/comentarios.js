@@ -21,13 +21,15 @@ let comentarios = JSON.parse(localStorage.getItem("comentarios")) || [
 function renderComentarios() {
     lista.innerHTML = "";
 
-    comentarios.forEach(texto => {
+    comentarios.forEach(c => {
         const div = document.createElement("div");
         div.classList.add("comentario");
 
         div.innerHTML = `
-            <img src="avatar.png">
-            <div class="comentario-box">${texto}</div>
+            <img src="./recursos_Multimedia/img/ComentariosUser.png">
+            <strong>${c.usuario}</strong>
+                <div class="comentario-box">${c.texto}</div>
+            </div>
         `;
 
         lista.appendChild(div);
