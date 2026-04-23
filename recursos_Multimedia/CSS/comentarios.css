@@ -1,0 +1,70 @@
+.comentarios-wrapper {
+    text-align: center;
+}
+
+.ComenFormulario {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.ComenaAvatar {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.ComenInput {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* Toggle */
+.ComenToggle {
+    margin: 20px auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Lista */
+.ComenListaComentarios {
+    display: none;
+    background: #eee;
+    padding: 20px;
+}
+
+/* Comentario individual */
+.comentario {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.comentario img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.comentario-box {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+}
