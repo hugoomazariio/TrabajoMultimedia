@@ -2,6 +2,13 @@
     text-align: center;
 }
 
+.comentarios-wrapper h2 {
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2e7d32;
+}
+
 .ComenFormulario {
     display: flex;
     justify-content: center;
