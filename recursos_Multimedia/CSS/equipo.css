@@ -1,0 +1,128 @@
+.equipo {
+    width: 100%;
+    padding: 40px 20px 60px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.equipo-titulo {
+    margin: 0 0 20px;
+    font-size: 2rem;
+    color: #3a2415;
+    letter-spacing: 2px;
+}
+
+
+.equipo-panel {
+    position: relative;
+    width: min(100%, 900px);
+    margin: 0 auto 35px;
+    aspect-ratio: 163 / 109; /* proporción de tu boceto */
+}
+
+.equipo-fondo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* BOCETOS DE LOS MIEMBROS */
+.miembro-pos {
+    position: absolute;
+    object-fit: contain;
+    z-index: 2;
+}
+
+/* POSICIONES AJUSTADAS AL BOCETO */
+/* fila superior */
+.m1 {
+    top: 18%;
+    left: 3.5%;
+    width: 14%;
+}
+
+.m2 {
+    top: 14%;
+    left: 30%;
+    width: 13%;
+}
+
+.m3 {
+    top: 14%;
+    left: 56%;
+    width: 13%;
+}
+
+.m4 {
+    top: 10%;
+    right: 5%;
+    width: 12%;
+}
+
+/* fila inferior */
+.m5 {
+    top: 46%;
+    left: 11%;
+    width: 14%;
+}
+
+.m6 {
+    top: 46%;
+    left: 37%;
+    width: 14%;
+}
+
+.m7 {
+    top: 46%;
+    left: 63%;
+    width: 14%;
+}
+
+/* BLOQUE DE INFORMACIÓN DEBAJO */
+.equipo-info {
+    width: min(100%, 1100px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    gap: 24px;
+    justify-items: center;
+}
+
+.ficha-miembro {
+    width: 100%;
+    max-width: 260px;
+}
+
+.ficha-miembro img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .equipo-info {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+    }
+
+    .equipo-titulo {
+        font-size: 1.8rem;
+    }
+}
+
+/* MÓVIL */
+@media (max-width: 600px) {
+    .equipo {
+        padding: 30px 12px 40px;
+    }
+
+    .equipo-titulo {
+        font-size: 1.5rem;
+    }
+
+    .equipo-info {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
