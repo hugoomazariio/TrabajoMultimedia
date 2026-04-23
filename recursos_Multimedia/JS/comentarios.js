@@ -1,4 +1,4 @@
-<script>
+
 const input = document.getElementById("comentarioInput");
 const boton = document.getElementById("ComenEnviarBtn");
 const lista = document.getElementById("ComenListaComentarios");
@@ -65,4 +65,3 @@ toggle.addEventListener("click", () => {
 
 // Inicializar
 renderComentarios();
-</script>
