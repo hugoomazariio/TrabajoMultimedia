@@ -255,18 +255,20 @@
 
         <!-- Aquí va la sección de comentarios-->
 
-        <section>
+        <section id="comentarios">
+            <div class="comentarios-wrapper">
             <h2>COMENTARIOS</h2>
-            <div class="contact-wrapper">
-                <form> <!-- Aquí va el formulario de contacto.-->
-                    <div class="input-with-label text-left">
+            <div class="ComenFormulario">
+                <img src="./recursos_Multimedia/img/ComentariosUser.png" class="ComenAvatar">
+                    <div class="ComenInput">
                         <span>Tu mensaje:</span>
-                        <textarea name="message" placeholder="Escriba su comentario" rows="3" required=""
-                            maxlength="5000"></textarea>
+                        <textarea id="comentarioInput" placeholder="Escribe un comentario..."></textarea>
+                        <button id="ComenEnviarBtn">Enviar</button>
                     </div>
-                    <input type="submit" value="Enviar">
-                </form>
-                <div>CAJA DE TEXTO</div>
+                </div>
+    <div class="ComenToggle" id="ComenToggleBtn">▼</div>
+    <div class="ComenListaComentarios" id="ComenListaComentarios"></div>
+</div>
         </section>
 
         <!-- Aquí va la sección de contacto-->
@@ -332,6 +334,8 @@
     <!-- Script para la sección de donaciones y contribuciones -->
     <script src="./recursos_Multimedia/JS/navegacion.js"></script>
     <!-- Script para la barra de navegación -->
+    <script src="./recursos_Multimedia/JS/comentarios.js"></script>
+    <!-- Script para la sección de donaciones y contribuciones -->
 
 </body>
 
