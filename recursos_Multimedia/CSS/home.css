@@ -1,12 +1,12 @@
 /* Fuentes */
 @font-face {
-    font-family: 'Cardo';
-    src: url('../fonts/Cardo/Cardo-Regular.ttf') format('truetype'); 
+    font-family: 'trabajo-multimedia-tipografia';
+    src: url('../fonts/trabajo-multimedia-tipografia.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 *{
-	font-family: 'Cardo', serif;
+	font-family: 'trabajo-multimedia-tipografia', serif;
 }
 /* Estilos para la sección HOME */
 body {
