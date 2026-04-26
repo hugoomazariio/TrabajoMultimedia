@@ -1,14 +1,25 @@
-<script>
 let comentarios = [];
 
-/* Cargar comentarios al iniciar */
-window.onload = function() {
+/* Esperar a que cargue TODO el DOM */
+document.addEventListener("DOMContentLoaded", () => {
+
+  console.log("Comentarios JS cargado ✅");
+
+  const input = document.getElementById("comentarioInput");
+  const boton = document.querySelector(".ComenButton");
+  const divider = document.querySelector(".ComenDivider");
+  const lista = document.getElementById("comentariosLista");
+
+  /* EVENTOS */
+  boton.addEventListener("click", agregarComentario);
+  divider.addEventListener("click", toggleComentarios);
+
+  /* CARGAR LOCALSTORAGE */
   const guardados = localStorage.getItem("comentarios");
 
   if (guardados) {
     comentarios = JSON.parse(guardados);
   } else {
-    // comentarios iniciales
     comentarios = [
       {
         nombre: "Toño Recio",
@@ -23,9 +34,9 @@ window.onload = function() {
   }
 
   renderComentarios();
-};
+});
 
-/* Mostrar comentarios */
+/* RENDER */
 function renderComentarios() {
   const lista = document.getElementById("comentariosLista");
   lista.innerHTML = "";
@@ -46,7 +57,7 @@ function renderComentarios() {
   });
 }
 
-/* Añadir comentario */
+/* AÑADIR */
 function agregarComentario() {
   const input = document.getElementById("comentarioInput");
   const texto = input.value.trim();
@@ -63,19 +74,16 @@ function agregarComentario() {
 
   input.value = "";
 
-  // abrir comentarios automáticamente
-  const lista = document.getElementById("comentariosLista");
-  lista.classList.remove("oculto");
+  document.getElementById("comentariosLista").classList.remove("oculto");
 }
 
-/* Guardar en localStorage */
-function guardarComentarios() {
-  localStorage.setItem("comentarios", JSON.stringify(comentarios));
-}
-
-/* Toggle abrir/cerrar */
+/* TOGGLE */
 function toggleComentarios() {
   const lista = document.getElementById("comentariosLista");
   lista.classList.toggle("oculto");
 }
-</script>
+
+/* GUARDAR */
+function guardarComentarios() {
+  localStorage.setItem("comentarios", JSON.stringify(comentarios));
+}
