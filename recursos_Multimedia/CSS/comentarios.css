@@ -5,7 +5,6 @@
   font-family: Arial, sans-serif;
 }
 
-/* TÍTULO CENTRADO PERFECTO */
 .comentarios-wrapper h2 {
   text-align: center;
   font-size: 40px;
@@ -13,9 +12,6 @@
   width: 100%;
 }
 
-/* ========================= */
-/* INPUT DE COMENTARIOS */
-/* ========================= */
 
 .ComenInputRow {
   display: flex;
@@ -23,7 +19,6 @@
   gap: 20px;
 }
 
-/* AVATAR */
 .ComenAvatar {
   width: 80px;
   height: 80px;
@@ -32,14 +27,12 @@
   flex-shrink: 0;
 }
 
-/* LADO DERECHO */
 .ComenRight {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-/* TEXTAREA */
 .ComenTextarea {
   width: 100%;
   height: 160px;
@@ -52,7 +45,6 @@
   box-sizing: border-box;
 }
 
-/* BOTÓN */
 .ComenButton {
   margin-top: 12px;
   align-self: flex-end;
@@ -70,43 +62,39 @@
   background: #dcdcdc;
 }
 
-/* ========================= */
-/* DIVISOR CON FLECHA */
-/* ========================= */
-
 .ComenDivider {
   display: flex;
   align-items: center;
-  gap: 15px;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 35px 0;
-  cursor: pointer;
 }
 
-.ComenDivider .line {
+.ComenLine {
   flex: 1;
   height: 2px;
   background: #ccc;
 }
 
-/* BOTÓN FLECHA */
 .ComenToggleBtn {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  border: 2px solid #ccc;
-  background: #e9e9e9;
-  cursor: pointer;
+  border: none;
+  background: black;
+  color: white;
   font-size: 18px;
-  transition: 0.2s;
-}
+  cursor: pointer;
 
-.ComenToggleBtn:hover {
-  background: #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
 }
-
-/* ========================= */
-/* LISTA DE COMENTARIOS */
-/* ========================= */
 
 .ComenLista {
   padding: 25px;
@@ -114,21 +102,19 @@
   background-image: url("./recursos_Multimedia/img/Fondo_PapelMarron.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* OCULTO */
 .oculto {
   display: none;
 }
 
-/* ITEM */
 .ComenItem {
   display: flex;
   gap: 20px;
   margin-bottom: 25px;
 }
 
-/* AVATAR ITEM */
 .ComenItemAvatar {
   width: 65px;
   height: 65px;
@@ -136,19 +122,16 @@
   object-fit: cover;
 }
 
-/* CONTENIDO */
 .ComenItemContent {
   flex: 1;
 }
 
-/* NOMBRE */
 .ComenItemName {
-  color: white; /* 🔥 como pediste */
+  color: white; 
   font-size: 16px;
   margin-bottom: 8px;
 }
 
-/* TEXTO */
 .ComenItemText {
   background: #e9e9e9;
   padding: 18px;
