@@ -5,6 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 *{
 	font-family: 'trabajo-multimedia-tipografia', serif;
 }
@@ -64,7 +65,8 @@ body {
 	gap: 12px;
 	align-items: center;
 	justify-content: flex-end;
-	margin-top: 25px;
+	margin-top: 20px;
+    margin-right: 10px;
 }
 
 /* Estilos de los enlaces de plataformas con iconos */

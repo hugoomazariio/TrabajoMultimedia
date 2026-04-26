@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Path To Nowhere</title>
     <link rel="icon" type="image/x-icon" href="./recursos_Multimedia/img/LogotipoTeamLemon_Negro.png"><!-- Favicon del sitio -->
+    <link rel="stylesheet" href="./recursos_Multimedia/CSS/reset.css">
+<!-- Hace que funcione para cualquier browser el CSS, TIENE QUE ESTAR EN LA PRIMERA LINEA -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/home.css"> <!-- Estilos de la sección Home -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/personajes.css"> <!-- Estilos de la sección Personajes -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/contacto_Disclaimer.css"><!-- Estilos de contacto y footer -->
@@ -16,32 +18,35 @@
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/historia.css"> <!-- Estilos de la sección Historia -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/gameplay.css"> <!-- Estilos de la sección Gameplay -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/ilustracion.css"> <!-- Estilos de la sección Ilustración -->
-    <link rel="stylesheet" href="./recursos_Multimedia/CSS/fonts.css"> <!--Tipografía-->
+    <link rel="stylesheet" href="./recursos_Multimedia/CSS/equipo.css"> <!-- Estilos de la sección Equipo -->
 </head>
 
 <body>
     <!-- Aquí comienza la página. Se empieza por la barra de navegación. Falta incluir el logo del equipo y ponerlo bonito. -->
     <nav> <!-- Aquí va la barra de navegación. Está muy esquematizada, hay que ponerlo bonito.-->
         <!-- Logo / Imagen a la izquierda -->
-        <div>
-            <a>
-                <img alt="Team Lemon Logo" src="./recursos_Multimedia/img/LogotipoTeamLemon_Blanco.png">
-            </a>
+        <div class="logo">
+            <img alt="Team Lemon Logo" src="./recursos_Multimedia/img/LogotipoTeamLemon_Blanco.png">
+            <h3>Team Lemon</h3>
         </div>
-
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <!-- Links de navegación a la derecha -->
-        <div>
-            <a href="#home">Home</a>
-            <a href="#historia">Historia</a>
-            <a href="#gameplay">Gameplay</a>
-            <a href="#personajes">Personajes</a>
-            <a href="#preguntas">Preguntas</a>
-            <a href="#contribuciones">Contribuciones</a>
-            <a href="#objetivos">Objetivos</a>
-            <a href="#equipo">Equipo</a>
-            <a href="#comentarios">Comentarios</a>
-            <a href="#contacto">Contacto</a>
-        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#gameplay">Gameplay</a></li>
+            <li><a href="#personajes">Personajes</a></li>
+            <li><a href="#preguntas">Preguntas</a></li>
+            <li><a href="#contribuciones">Contribuciones</a></li>
+            <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#comentarios">Comentarios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
     </nav>
 
     <!-- Aquí ya empieza el contenido, ahora va el banner junto descripción.-->
@@ -52,8 +57,8 @@
         Luego Imagen, descripción, plataformas y vídeo-->
         <section id="home" class="banner">
             <div class="banner-content">
-                <h1>TÍTULO</h1>
-                <p>LEMA</p>
+                <h1>Path to Nowhere</h1>
+                <p>¿Qué encontrarás al final del camino?</p>
             </div>
         </section>
         <section>
@@ -107,7 +112,11 @@
             <h2>HISTORIA</h2>
             <img src="./recursos_Multimedia/img/DivisorLineaDoble_Abajo.png" alt="Decoración" class="historia-divisor historia-divisor-bottom">
             <div class="historia-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloribus animi distinctio aliquid dolore, iste earum reiciendis laborum ullam expedita dolor ratione nam ex deserunt beatae debitis libero vitae voluptatum?
+                Poniéndote en la piel del cazarrecompensas Jace Turner, en la región desierta de Moustuless, deberás de buscar pistas y 
+                colaborar con la sheriff Blanche para dar caza al jefe de la banda de “Los Kräve”.
+                 Un criminal que ha campado a sus anchas durante demasiado tiempo, y cuyas acciones tienen atemorizados a todos los pueblos
+                  cercanos. Para lograr llevarte tu parte de la recompensa, deberás de investigar sobre el paradero del criminal.
+                   Sin embargo, no sabes qué, ni a quien, te vas a encontrar al final.
             </div>
         </section>
 
@@ -118,7 +127,9 @@
             <img src="./recursos_Multimedia/img/DivisorLineaDoble_Abajo.png" alt="Decoración" class="gameplay-divisor gameplay-divisor-bottom">
             <div class="gameplay-container">
                 <div class="gameplay-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nobis natus nemo quae iure nihil maxime illo debitis delectus dicta expedita vel error, blanditiis quas labore officia adipisci? Error, asperiores.
+                En <i>Path to nowhere</i> te toparás un mundo vivo y que te llama a investigar.
+                 Encontrarás numerosas mecánicas para buscar pistas e interrogar a cualquier persona que te ayude a llegar
+                  a tu objetivo. El diseño se centra en darte la libertad que necesitas para poder darle caza al famoso criminal. 
                 </div>
                 <div class="gameplay-image">
                     <img src="./recursos_Multimedia/img/imagen_Placeholder.png" alt="Escenario de Gameplay">
@@ -229,14 +240,53 @@
         </section>
 
         <!-- Aquí va la sección de equipo-->
-        <section id="equipo">
-            <h2>EQUIPO</h2>
-            <div>
-                <div>BOCETO 1</div>
-                <div>BOCETO 2</div>
-                <div>BOCETO 3</div>
+<!-- SECCIÓN EQUIPO -->
+<section class="equipo-section" id="equipo">
+         <div class="divisor-container">
+                <img alt="Divisor floritura" src="./recursos_Multimedia/img/DivisorFloritura.png" class="floritura">
             </div>
-        </section>
+        <h2 class="equipo-titulo">EQUIPO</h2>
+
+        <div class="fila-equipo fila-superior">
+            <article class="miembro">
+                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Adrian.png" alt="Adrián">
+                <img class="info-miembro" src="./recursos_Multimedia/img/Equipo_InformacionAdrian.png" alt="Información de Adrián">
+            </article>
+
+            <article class="miembro">
+                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Hector.png" alt="Héctor">
+                <img class="info-miembro" src="./recursos_Multimedia/img/Equipo_InformacionHector.png" alt="Información de Héctor">
+            </article>
+
+            <article class="miembro">
+                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Paula.png" alt="Paula">
+                <img class="info-miembro" src="./recursos_Multimedia/img/Equipo_InformacionPaula.png" alt="Información de Paula">
+            </article>
+
+            <article class="miembro">
+                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Adrian.png" alt="Izan">
+                <img class="info-miembro" src="./recursos_Multimedia/img/Equipo_InformacionIzan.png" alt="Información de Izan">
+            </article>
+        </div>
+
+        <div class="fila-equipo fila-inferior">
+            <article class="miembro">
+                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Adrian.png" alt="Hugo">
+                <img class="info-miembro" src="./recursos_Multimedia/img/Equipo_InformacionHugo.png" alt="Información de Hugo">
+            </article>
+
+            <article class="miembro">
+                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Adrian.png" alt="Dani">
+                <img class="info-miembro" src="./recursos_Multimedia/img/Equipo_InformacionDani.png" alt="Información de Dani">
+            </article>
+
+            <article class="miembro">
+                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Adrian.png" alt="Miembro 7">
+                <img class="info-miembro" src="./recursos_Multimedia/img/Equipo_InformacionAdrian.png" alt="Información de Miembro 7">
+            </article>
+        </div>
+    </div>
+</section>
 
         <!-- Aquí va la sección de comentarios-->
 
@@ -327,6 +377,7 @@
     <script src="./recursos_Multimedia/JS/cambioExpedientePersonaje.js"></script> <!-- Script para cambiar el expediente del personaje -->
     <script src="./recursos_Multimedia/JS/donacionContribuciones.js"></script> <!-- Script para la sección de donaciones y contribuciones -->
     <script src="./recursos_Multimedia/JS/comentarios.js"></script> <!-- Script para los comentarios -->
+    <script src="./recursos_Multimedia/JS/navegacion.js"></script> <!-- Script para la barra de navegación -->
 </body>
 
 </html>

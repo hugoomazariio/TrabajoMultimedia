@@ -1,0 +1,54 @@
+
+.equipo-section {
+	background: url("../img/Fondo_PapelVerde.jpg") center/cover no-repeat;
+	padding: 40px 24px;
+	color: #1a3a1f;
+	font-family: 'Arial', sans-serif;
+}
+.equipo-titulo {
+    margin: 0 0 20px;
+    text-align: center;
+    color: #2f1d12;
+    font-size: 2rem;
+}
+
+/* LAS DOS FILAS */
+.fila-equipo {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+.fila-superior {
+    margin-bottom: 30px;
+}
+
+.fila-inferior {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* CADA MIEMBRO */
+.miembro {
+    flex: 0 0 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.boceto {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.info-miembro {
+    width: 95px;
+    height: auto;
+    display: block;
+}

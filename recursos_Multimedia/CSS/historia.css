@@ -53,6 +53,8 @@
 	.historia-text {
 		font-size: 20px;
 		padding: 20px;
+		margin-right: 8px;
+		margin-left: 8px;
 	}
 }
 
@@ -64,12 +66,14 @@
 	.historia-text {
 		font-size: 18px;
 		padding: 20px;
+		margin-right: 12px;
 	}
 }
 
 @media (max-width: 768px) {
 	.historia-section {
 		padding: 0 16px;
+
 	}
 	
 	.historia-section h2 {
@@ -80,6 +84,7 @@
 		font-size: 16px;
 		padding: 16px;
 		border-width: 2px;
+		margin-right: 8px;
 	}
 	
 	.historia-divisor {
@@ -101,6 +106,7 @@
 		padding: 12px;
 		line-height: 1.4;
 		border-width: 2px;
+		margin-right: 8px;
 	}
 	
 	.historia-divisor {
