@@ -1,7 +1,7 @@
 /* Estilos para la sección ILUSTRACIÓN */
 
 .ilustracion-section {
-	height: 75vh;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -10,8 +10,6 @@
 }
 
 .ilustracion-section img {
-	width: 100%;
-	height: 100%;
 	object-fit: cover;
 	display: block;
 }
@@ -25,7 +23,7 @@
 
 @media (max-width: 768px) {
 	.ilustracion-section {
-		height: 30vh;
+		height: 50vh;
 	}
 }
 

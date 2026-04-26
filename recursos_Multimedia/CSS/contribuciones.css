@@ -2,17 +2,24 @@
 .contribuciones-section {
     display: flex;
     flex-direction: column;
-    align-items: center;/* Esto centra todo horizontalmente */
-    gap: 16px;/* Espaciado constante entre elementos */
-    text-align: center;/* Asegura que los párrafos también se centren */
+    align-items: center;
+    /* Esto centra todo horizontalmente */
+    gap: 16px;
+    /* Espaciado constante entre elementos */
+    text-align: center;
+    /* Asegura que los párrafos también se centren */
+    overflow: hidden;
 }
 
 /* Estilos para el divisor (floritura) */
 .floritura {
     display: block;
-    margin: 0 auto;/* Centrado clásico adicional */
-    max-width: 100%;/* Evita que se salga en móviles */
-    height: auto; /* Mantiene la proporción */
+    margin: 0 auto;
+    /* Centrado clásico adicional */
+    max-width: 100%;
+    /* Evita que se salga en móviles */
+    height: auto;
+    /* Mantiene la proporción */
 }
 
 /* Estilos para las versiones */
@@ -20,14 +27,20 @@
 .estandar {
     position: relative;
     text-align: center;
+    display: flex;
+    overflow: hidden;
 }
+
+
 
 .version_estandar {
     display: block;
-    margin: 0 auto; /* Centrado clásico adicional */
+    margin: 0 auto;
+    /* Centrado clásico adicional */
     width: 65%;
     max-width: 100%;
-    height: auto; /* Mantiene la proporción */
+    height: auto;
+    /* Mantiene la proporción */
 }
 
 .EstandarLine {
@@ -48,14 +61,17 @@
 .deluxe {
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 
 .version_deluxe {
     display: block;
-    margin: 0 auto; /* Centrado clásico adicional */
+    margin: 0 auto;
+    /* Centrado clásico adicional */
     width: 70%;
     max-width: 100%;
-    height: auto; /* Mantiene la proporción */
+    height: auto;
+    /* Mantiene la proporción */
 }
 
 .DeluxeLine {
@@ -77,14 +93,17 @@
 .versCazarecompensas {
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 
 .version_cazarecompensas {
     display: block;
-    margin: 0 auto; /* Centrado clásico adicional */
+    margin: 0 auto;
+    /* Centrado clásico adicional */
     width: 80%;
     max-width: 100%;
-    height: auto; /* Mantiene la proporción */
+    height: auto;
+    /* Mantiene la proporción */
 }
 
 .CazaRecLine {
@@ -104,7 +123,8 @@
 
 /* Estilos para el H2 de esta sección */
 .contribuciones-section h2 {
-    font-size: 40px; /* Para que coincida con Personajes */
+    font-size: 40px;
+    /* Para que coincida con Personajes */
     margin: 0;
 }
 
@@ -137,7 +157,7 @@
     border-radius: 15px;
     background: #f9f9f9;
     font-family: Arial, sans-serif;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
 }
 
@@ -196,6 +216,7 @@ button.disabled {
 }
 
 
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .contribuciones-section h2 {
@@ -239,17 +260,17 @@ button.disabled {
     }
 
     .EstandarLine {
-        width: 120px;
+        width: 80px;
     }
 
     .DeluxeLine {
-        width: 120px;
+        width: 80px;
     }
 
     .CazaRecLine {
-        width: 120px;
+        width: 80px;
     }
-
+    
     .donacion-container {
         width: 95%;
         max-width: 600px;
@@ -285,16 +306,14 @@ button.disabled {
         width: 90px;
     }
 
-    .EstandarLine {
-        width: 90px;
+    .estandar,
+    .deluxe,
+    .versCazarecompensas {
+        display: block;
     }
 
-    .DeluxeLine {
-        width: 90px;
-    }
-
-    .CazaRecLine {
-        width: 90px;
+    .contenido_centro {
+        flex: 1;
     }
 
     .version_estandar {
@@ -307,30 +326,6 @@ button.disabled {
 
     .version_cazarecompensas {
         max-width: 95%;
-    }
-
-    .EstandarLine.lineaEstandarIzq {
-        left: -20px;
-    }
-
-    .EstandarLine.lineaEstandarDcho {
-        right: -20px;
-    }
-
-    .DeluxeLine.lineaDeluxeIzq {
-        left: -20px;
-    }
-
-    .DeluxeLine.lineaDeluxeDcho {
-        right: -20px;
-    }
-
-    .CazaRecLine.lineaCazaRecIzq {
-        left: -20px;
-    }
-
-    .CazaRecLine.lineaCazaRecDcho {
-        right: -20px;
     }
 
     .donacion-container {

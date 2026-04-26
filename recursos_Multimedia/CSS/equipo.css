@@ -1,10 +1,10 @@
-
 .equipo-section {
-	background: url("../img/Fondo_PapelVerde.jpg") center/cover no-repeat;
-	padding: 40px 24px;
-	color: #1a3a1f;
-	font-family: 'Arial', sans-serif;
+    background: url("../img/Fondo_PapelVerde.jpg") center/cover no-repeat;
+    padding: 40px 24px;
+    color: #1a3a1f;
+    font-family: 'Arial', sans-serif;
 }
+
 .equipo-titulo {
     margin: 0 0 20px;
     text-align: center;
@@ -84,7 +84,6 @@
 
 /* RESPONSIVE DESIGN */
 
-/* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
     .equipo-titulo {
         font-size: 1.5rem;
@@ -108,9 +107,12 @@
     .fila-inferior {
         width: 90%;
     }
+
+    .floritura {
+        width: 200px;
+    }
 }
 
-/* Small tablets and large phones (max-width: 768px) */
 @media (max-width: 768px) {
     .equipo-section {
         padding: 30px 16px;
@@ -144,9 +146,12 @@
     .fila-inferior {
         width: 100%;
     }
+
+    .floritura {
+        width: 150px;
+    }
 }
 
-/* Phones (max-width: 480px) */
 @media (max-width: 480px) {
     .equipo-section {
         padding: 20px 12px;
@@ -174,5 +179,9 @@
 
     .fila-superior {
         margin-bottom: 15px;
+    }
+
+    .floritura {
+        width: 120px;
     }
 }
