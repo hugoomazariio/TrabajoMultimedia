@@ -242,25 +242,29 @@
 
         <section id="comentarios">
             <div class="comentarios-wrapper">
+
   <h2>COMENTARIOS</h2>
 
+  <!-- INPUT -->
   <div class="ComenInputRow">
-    <img class="ComenAvatar" src="./recursos_Multimedia/img/ComentariosUser.png" alt="avatar">
+    <img class="ComenAvatar" src="imagen.png" alt="avatar">
 
     <div class="ComenRight">
-      <textarea class="ComenTextarea" placeholder="Escribe tu comentario..."></textarea>
-      <button class="ComenButton">Enviar</button>
+      <textarea id="comentarioInput" class="ComenTextarea" placeholder="Escribe tu comentario..."></textarea>
+      <button class="ComenButton" onclick="agregarComentario()">Enviar</button>
     </div>
   </div>
-</div>
 
-<div class="ComenItem">
-  <img class="ComenItemAvatar" src="./recursos_Multimedia/img/ComentariosUser.png" alt="avatar">
-  
-  <div class="ComenItemContent">
-    <div class="ComenItemName">Toño Recio</div>
-    <div class="ComenItemText">sample text</div>
+  <!-- DIVISOR -->
+  <div class="ComenDivider" onclick="toggleComentarios()">
+    <div class="line"></div>
+    <button class="ComenToggleBtn">▼</button>
+    <div class="line"></div>
   </div>
+
+  <!-- LISTA -->
+  <div id="comentariosLista" class="ComenLista oculto"></div>
+
 </div>
         </section>
 
@@ -323,6 +327,7 @@
 
     <script src="./recursos_Multimedia/JS/cambioExpedientePersonaje.js"></script> <!-- Script para cambiar el expediente del personaje -->
     <script src="./recursos_Multimedia/JS/donacionContribuciones.js"></script> <!-- Script para la sección de donaciones y contribuciones -->
+    <script src="./recursos_Multimedia/JS/comentarios.js"></script> <!-- Script para los comentarios -->
 </body>
 
 </html>
