@@ -1,2 +1,6 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../fonts/MiFuente.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

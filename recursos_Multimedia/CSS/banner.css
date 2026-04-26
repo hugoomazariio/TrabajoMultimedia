@@ -13,7 +13,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0); /*Para la opacidad, así deja ver bien las letras*/
+  background: rgba(0,0,0,0); /*Para la opacidad, así deja ver bien las letras (Por si no os gusta como se ven con las letras)*/
 }
 
 .banner-content {
@@ -21,7 +21,6 @@
   z-index: 1;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .banner {
     height: 60vh;
@@ -33,3 +32,10 @@
     height: 40vh;
   }
 }
+
+.banner-content h1 {
+    font-family: 'trabajo-multimedia-tipografia', serif;
+    font-size: 80px; /* ajusta según tu diseño */
+    letter-spacing: 2px;
+}
+
