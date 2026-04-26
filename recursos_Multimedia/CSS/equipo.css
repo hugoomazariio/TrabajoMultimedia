@@ -10,6 +10,7 @@
     text-align: center;
     color: #2f1d12;
     font-size: 2rem;
+    color: #fff;
 }
 
 /* LAS DOS FILAS */
@@ -31,24 +32,147 @@
     margin: 0 auto;
 }
 
-/* CADA MIEMBRO */
+/* CADA MIEMBRO - Container para el efecto 3D */
 .miembro {
-    flex: 0 0 140px;
+    flex: 0 0 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    perspective: 1000px;
+    position: relative;
+    width: 150px;
+    height: 180px;
 }
 
+/* Imagen del boceto (frente) */
 .boceto {
-    width: 70px;
+    width: 150px;
     height: auto;
     display: block;
     margin-bottom: 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 
-.info-miembro {
-    width: 95px;
+.boceto.flipped {
+    transform: translateX(-50%) rotateY(180deg);
+}
+
+/* Información del miembro (atrás) */
+.info_miembro {
+    width: 150px;
     height: auto;
     display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotateY(180deg);
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.info_miembro.flipped {
+    transform: translateX(-50%) rotateY(0deg);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .equipo-titulo {
+        font-size: 1.5rem;
+    }
+
+    .miembro {
+        flex: 0 0 140px;
+        width: 120px;
+        height: 150px;
+    }
+
+    .boceto,
+    .info_miembro {
+        width: 120px;
+    }
+
+    .fila-equipo {
+        gap: 20px;
+    }
+
+    .fila-inferior {
+        width: 90%;
+    }
+}
+
+/* Small tablets and large phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .equipo-section {
+        padding: 30px 16px;
+    }
+
+    .equipo-titulo {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .miembro {
+        flex: 0 0 110px;
+        width: 95px;
+        height: 120px;
+    }
+
+    .boceto,
+    .info_miembro {
+        width: 95px;
+    }
+
+    .fila-equipo {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .fila-superior {
+        margin-bottom: 20px;
+    }
+
+    .fila-inferior {
+        width: 100%;
+    }
+}
+
+/* Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .equipo-section {
+        padding: 20px 12px;
+    }
+
+    .equipo-titulo {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .miembro {
+        flex: 0 0 80px;
+        width: 70px;
+        height: 90px;
+    }
+
+    .boceto,
+    .info_miembro {
+        width: 70px;
+    }
+
+    .fila-equipo {
+        gap: 10px;
+    }
+
+    .fila-superior {
+        margin-bottom: 15px;
+    }
 }

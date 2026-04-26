@@ -99,7 +99,7 @@
 .ComenLista {
   padding: 25px;
   border-radius: 12px;
-  background-image: url("./recursos_Multimedia/img/Fondo_PapelMarron.jpg");
+  background-image: url("../img/Fondo_PapelMarron.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
