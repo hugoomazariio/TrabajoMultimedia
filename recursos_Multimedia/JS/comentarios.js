@@ -1,6 +1,5 @@
 let comentarios = [];
 
-/* Esperar a que cargue TODO el DOM */
 document.addEventListener("DOMContentLoaded", () => {
 
   console.log("Comentarios JS cargado ✅");
@@ -10,11 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const divider = document.querySelector(".ComenDivider");
   const lista = document.getElementById("comentariosLista");
 
-  /* EVENTOS */
   boton.addEventListener("click", agregarComentario);
   divider.addEventListener("click", toggleComentarios);
 
-  /* CARGAR LOCALSTORAGE */
   const guardados = localStorage.getItem("comentarios");
 
   if (guardados) {
@@ -36,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
   renderComentarios();
 });
 
-/* RENDER */
 function renderComentarios() {
   const lista = document.getElementById("comentariosLista");
   lista.innerHTML = "";
@@ -57,7 +53,6 @@ function renderComentarios() {
   });
 }
 
-/* AÑADIR */
 function agregarComentario() {
   const input = document.getElementById("comentarioInput");
   const texto = input.value.trim();
@@ -77,13 +72,17 @@ function agregarComentario() {
   document.getElementById("comentariosLista").classList.remove("oculto");
 }
 
-/* TOGGLE */
 function toggleComentarios() {
   const lista = document.getElementById("comentariosLista");
+  const btn = document.getElementById("toggleBtn");
+
   lista.classList.toggle("oculto");
+
+  const abierto = !lista.classList.contains("oculto");
+
+  btn.textContent = abierto ? "▲" : "▼";
 }
 
-/* GUARDAR */
 function guardarComentarios() {
   localStorage.setItem("comentarios", JSON.stringify(comentarios));
 }
