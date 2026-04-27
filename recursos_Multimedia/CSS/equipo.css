@@ -13,6 +13,16 @@
     color: #fff;
 }
 
+/* Subtítulo descriptivo de equipo */
+.equipo-subtitulo {
+	font-size: 22px;
+	margin: 0 0 28px 0;
+	color: #fff;
+	line-height: 1.6;
+	font-weight: 400;
+	text-align: center;
+
+}
 /* LAS DOS FILAS */
 .fila-equipo {
     width: 100%;
@@ -89,6 +99,10 @@
         font-size: 1.5rem;
     }
 
+    .equipo-subtitulo {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }    
     .miembro {
         flex: 0 0 140px;
         width: 120px;
@@ -121,6 +135,11 @@
     .equipo-titulo {
         font-size: 1.3rem;
         margin-bottom: 15px;
+    }
+
+    .equipo-subtitulo {
+        font-size: 16px;
+        margin-bottom: 20px;
     }
 
     .miembro {
@@ -162,6 +181,11 @@
         margin-bottom: 12px;
     }
 
+    .equipo-subtitulo {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    
     .miembro {
         flex: 0 0 80px;
         width: 70px;
