@@ -7,7 +7,7 @@
 **Path to Nowhere** es un videojuego de acción y aventura ambientado en el lejano oeste. Esta landing page ha sido diseñada para presentar el universo del juego, sus mecánicas de investigación únicas y sumergir al usuario en la caza del criminal más buscado de la región.
 
 ## 🎯 Objetivo del Proyecto
-Desarrollar una interfaz web moderna y responsiva que capture la esencia "Western Noir" del juego, facilitando la lectura de sus mecánicas principales y fomentando el interés del jugador.
+Desarrollar una interfaz web moderna y responsiva que capture la esencia "Western" del juego, facilitando la lectura de sus mecánicas principales y fomentando el interés del jugador.
 
 ## 🚀 Mecánicas Destacadas
 La web detalla el sistema de juego innovador centrado en la resolución de casos:
@@ -22,6 +22,7 @@ La web detalla el sistema de juego innovador centrado en la resolución de casos
 * **CSS3:** Diseño personalizado con Flexbox/Grid y animaciones temáticas.
 * **JavaScript:** Interactividad en los menús y efectos visuales.
 * **GitHub:** Control de versiones y despliegue.
+
 ## 🎓 Institución
 Este proyecto ha sido desarrollado bajo el marco académico de la Universidad Rey Juan Carlos.
 
@@ -47,4 +48,3 @@ El proyecto ha sido realizado de manera colaborativa por:
 ├── css/                # Hojas de estilo (diseño western)
 ├── img/                # Assets visuales, fondos e iconos
 └── js/                 # Scripts de interactividad
-
