@@ -22,6 +22,24 @@ La web detalla el sistema de juego innovador centrado en la resolución de casos
 * **CSS3:** Diseño personalizado con Flexbox/Grid y animaciones temáticas.
 * **JavaScript:** Interactividad en los menús y efectos visuales.
 * **GitHub:** Control de versiones y despliegue.
+## 🎓 Institución
+Este proyecto ha sido desarrollado bajo el marco académico de la Universidad Rey Juan Carlos.
+
+[![URJC](https://img.shields.io/badge/URJC-Web_Oficial-red?style=for-the-badge&logo=university&logoColor=white)](https://www.urjc.es)
+
+## 👥 Equipo de Desarrollo
+El proyecto ha sido realizado de manera colaborativa por:
+
+* **Paula Chiru** - [@Sanita-Komori](https://github.com/Sanita-Komori)
+* **Hugo Mazarío** - [@hugoomazariio](https://github.com/hugoomazariio)
+* **Héctor Sevillano** - [@TorriFriedBread](https://github.com/TorriFriedBread)
+* **Adrián de la Fuente** - [@Alberto-Catetas](https://github.com/Alberto-Catetas)
+* **Daniel Rodrigo** - [@Daniel-Rodrigo07](https://github.com/Daniel-Rodrigo07)
+* **Izan Huesca** - [@iZaNn7](https://github.com/iZaNn7)
+* **Andres Mediavilla** - [@AndresMediavilla](https://github.com/AndresMediavilla)
+
+---
+*Este proyecto ha sido realizado como parte del Trabajo de Multimedia (2026).*
 
 ## 📂 Estructura del Repositorio
 ```text
@@ -29,3 +47,4 @@ La web detalla el sistema de juego innovador centrado en la resolución de casos
 ├── css/                # Hojas de estilo (diseño western)
 ├── img/                # Assets visuales, fondos e iconos
 └── js/                 # Scripts de interactividad
+
