@@ -148,6 +148,7 @@ footer {
 	color: #333;
 	background-color: #f9fbf9;
 	transition: all 0.3s ease;
+
 }
 
 /* Efecto de focus (cuando el campo está seleccionado) */
@@ -181,6 +182,7 @@ footer {
 	letter-spacing: 1px;
 	transition: all 0.3s ease;
 	margin-top: 8px;
+	text-align: center;
 }
 
 /* Efecto hover (cuando usuario pasa el ratón sobre el botón) */
