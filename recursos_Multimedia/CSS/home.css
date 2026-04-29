@@ -88,21 +88,41 @@ body {
 }
 
 /* Responsive Design */
+
+/* iPad Pro (1024px) - Layout vertical con imagen más grande */
 @media (max-width: 1024px) {
     .home-main-container {
-        gap: 16px;
+        flex-direction: column;
+        gap: 20px;
     }
     
     .home-image {
+        flex: 1;
         margin-left: 16px;
+        margin-right: 16px;
     }
     
     .home-image img {
-        max-width: 400px;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .home-description-container {
+        flex: 1;
+        margin: 0 16px;
+    }
+    
+    .home-description {
+        font-size: 18px;
+    }
+    
+    .platform-links {
+        justify-content: center;
+        gap: 8px;
     }
     
     .platform-link img {
-        width: 80px;
+        width: 90px;
     }
 }
 
@@ -168,7 +188,7 @@ body {
     }
     
     .platform-link img {
-        width: 60px;
+        width: 75px;
     }
 }
 
@@ -203,7 +223,7 @@ body {
     }
     
     .platform-link img {
-        width: 45px;
+        width: 55px;
     }
     
     .platform-links span {

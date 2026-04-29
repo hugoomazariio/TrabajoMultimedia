@@ -152,11 +152,218 @@
   flex: 1;
   height: 2px;
   background: black;
-  max-width: 300px; /* controla tamaño */
+  max-width: none;
 }
 
 .ComenTitle h2 {
   font-size: 40px;
   margin: 0;
   white-space: nowrap;
+}
+
+/* RESPONSIVE DESIGN PARA COMENTARIOS */
+
+/* iPad Pro y tablets grandes (1024px) */
+@media (max-width: 1024px) {
+  .comentarios-wrapper {
+    width: 85%;
+  }
+
+  .ComenTitle h2 {
+    font-size: 32px;
+  }
+
+  .ComenAvatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .ComenItemAvatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .ComenTextarea {
+    height: 140px;
+    font-size: 15px;
+  }
+
+  .ComenButton {
+    font-size: 16px;
+    padding: 8px 30px;
+  }
+
+  .ComenItemText {
+    font-size: 14px;
+  }
+}
+
+/* Tablets (768px) */
+@media (max-width: 768px) {
+  .comentarios-wrapper {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .comentarios-wrapper h2 {
+    font-size: 32px;
+  }
+
+  .ComenTitle {
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+
+  .ComenTitle h2 {
+    font-size: 28px;
+  }
+
+  .ComenTitleLine {
+    flex: 1;
+    min-width: 20px;
+  }
+
+  .ComenInputRow {
+    gap: 15px;
+  }
+
+  .ComenAvatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .ComenTextarea {
+    height: 120px;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .ComenButton {
+    font-size: 15px;
+    padding: 8px 28px;
+  }
+
+  .ComenDivider {
+    margin: 30px 0;
+  }
+
+  .ComenToggleBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .ComenLista {
+    padding: 20px;
+  }
+
+  .ComenItem {
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .ComenItemAvatar {
+    width: 55px;
+    height: 55px;
+  }
+
+  .ComenItemName {
+    font-size: 14px;
+  }
+
+  .ComenItemText {
+    font-size: 13px;
+    padding: 14px;
+  }
+}
+
+/* Móviles (480px) */
+@media (max-width: 480px) {
+  .comentarios-wrapper {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .comentarios-wrapper h2 {
+    font-size: 24px;
+  }
+
+  .ComenTitle {
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .ComenTitle h2 {
+    font-size: 22px;
+    white-space: normal;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .ComenTitleLine {
+    flex: 1;
+    height: 2px;
+    min-width: 15px;
+  }
+
+  .ComenInputRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .ComenAvatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ComenTextarea {
+    height: 100px;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .ComenButton {
+    font-size: 14px;
+    padding: 8px 25px;
+    align-self: center;
+  }
+
+  .ComenDivider {
+    margin: 25px 0;
+  }
+
+  .ComenToggleBtn {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .ComenLista {
+    padding: 15px;
+  }
+
+  .ComenItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+
+  .ComenItemAvatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ComenItemName {
+    font-size: 13px;
+  }
+
+  .ComenItemText {
+    font-size: 12px;
+    padding: 10px;
+  }
 }

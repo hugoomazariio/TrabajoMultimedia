@@ -1,0 +1,204 @@
+/* ESTILOS ESPECÍFICOS PARA LA SECCIÓN DE PREGUNTAS */
+
+/* Contenedor principal de preguntas */
+#preguntas.comentarios-wrapper {
+  width: 80%;
+  max-width: 1100px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+#preguntas.comentarios-wrapper h2 {
+  font-size: 40px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Título con divisores */
+#preguntas .ComenTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+#preguntas .ComenTitleLine {
+  flex: 1;
+  height: 2px;
+  background: black;
+  max-width: none;
+}
+
+#preguntas .ComenTitle h2 {
+  font-size: 40px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Lista de preguntas */
+#preguntas .ComenLista {
+  padding: 25px;
+  border-radius: 12px;
+  background-image: url("../img/Fondo_PapelMarron.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Items individuales de preguntas */
+#preguntas .ComenItem {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+#preguntas .ComenItemAvatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+#preguntas .ComenItemContent {
+  flex: 1;
+}
+
+#preguntas .ComenItemName {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+#preguntas .ComenItemText {
+  background: #e9e9e9;
+  padding: 18px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#preguntas .ComenItemText p {
+  margin: 10px 0 0 0;
+}
+
+/* RESPONSIVE DESIGN PARA PREGUNTAS */
+
+/* iPad Pro y tablets grandes (1024px) */
+@media (max-width: 1024px) {
+  #preguntas.comentarios-wrapper {
+    width: 85%;
+    margin: 35px auto;
+  }
+
+  #preguntas .ComenTitle h2 {
+    font-size: 32px;
+  }
+
+  #preguntas .ComenItemAvatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  #preguntas .ComenItemText {
+    font-size: 14px;
+    padding: 16px;
+  }
+}
+
+/* Tablets (768px) */
+@media (max-width: 768px) {
+  #preguntas.comentarios-wrapper {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  #preguntas .ComenTitle {
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+
+  #preguntas .ComenTitle h2 {
+    font-size: 28px;
+  }
+
+  #preguntas .ComenLista {
+    padding: 20px;
+  }
+
+  #preguntas .ComenItem {
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  #preguntas .ComenItemAvatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  #preguntas .ComenItemName {
+    font-size: 15px;
+  }
+
+  #preguntas .ComenItemText {
+    font-size: 13px;
+    padding: 12px;
+  }
+}
+
+/* Móviles (480px) */
+@media (max-width: 480px) {
+  #preguntas.comentarios-wrapper {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  #preguntas .ComenTitle {
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #preguntas .ComenTitle h2 {
+    font-size: 24px;
+    margin: 0;
+    white-space: normal;
+    flex-shrink: 0;
+  }
+
+  #preguntas .ComenTitleLine {
+    flex: 1;
+    height: 2px;
+    min-width: 20px;
+  }
+
+  #preguntas .ComenLista {
+    padding: 15px;
+  }
+
+  #preguntas .ComenItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+
+  #preguntas .ComenItemAvatar {
+    width: 55px;
+    height: 55px;
+  }
+
+  #preguntas .ComenItemName {
+    font-size: 14px;
+  }
+
+  #preguntas .ComenItemText {
+    font-size: 12px;
+    padding: 10px;
+  }
+}

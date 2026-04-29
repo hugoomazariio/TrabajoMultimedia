@@ -16,10 +16,9 @@
     display: block;
     margin: 0 auto;
     /* Centrado clásico adicional */
-    max-width: 100%;
-    /* Evita que se salga en móviles */
-    height: auto;
-    /* Mantiene la proporción */
+    width: 90%;
+    max-width: 1300px;
+    height: auto; /* Mantiene la proporción */
 }
 
 /* Estilos para las versiones */
@@ -218,9 +217,23 @@ button.disabled {
 
 
 /* Responsive Design */
+
+/* Pantallas extra grandes (iPad Pro, Nest Hub) */
+@media (min-width: 1366px) {
+    .floritura {
+        width: 100%;
+        max-width: 1150px;
+    }
+}
+
 @media (max-width: 1024px) {
     .contribuciones-section h2 {
         font-size: 32px;
+    }
+
+    .floritura {
+        width: 100%;
+        max-width: 950px;
     }
 
     .EstandarLine {
@@ -256,7 +269,8 @@ button.disabled {
     }
 
     .floritura {
-        max-width: 90%;
+        width: 100%;
+        max-width: 750px;
     }
 
     .EstandarLine {
@@ -303,7 +317,8 @@ button.disabled {
     }
 
     .floritura {
-        width: 90px;
+        width: 100%;
+        max-width: 400px;
     }
 
     .estandar,

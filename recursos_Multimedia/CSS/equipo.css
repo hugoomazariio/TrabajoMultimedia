@@ -23,6 +23,16 @@
 	text-align: center;
 
 }
+
+/* Estilos para el divisor (floritura) */
+.floritura {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1250px;
+    height: auto;
+}
+
 /* LAS DOS FILAS */
 .fila-equipo {
     width: 100%;
@@ -30,7 +40,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .fila-superior {
@@ -94,6 +104,14 @@
 
 /* RESPONSIVE DESIGN */
 
+/* Pantallas extra grandes (iPad Pro, Nest Hub) */
+@media (min-width: 1366px) {
+    .floritura {
+        width: 100%;
+        max-width: 1100px;
+    }
+}
+
 @media (max-width: 1024px) {
     .equipo-titulo {
         font-size: 1.5rem;
@@ -123,7 +141,8 @@
     }
 
     .floritura {
-        width: 200px;
+        width: 100%;
+        max-width: 850px;
     }
 }
 
@@ -159,6 +178,14 @@
     }
 
     .fila-superior {
+        justify-content: center;
+    }
+
+    .fila-inferior {
+        justify-content: center;
+    }
+
+    .fila-superior {
         margin-bottom: 20px;
     }
 
@@ -167,7 +194,8 @@
     }
 
     .floritura {
-        width: 150px;
+        width: 100%;
+        max-width: 650px;
     }
 }
 
@@ -187,18 +215,24 @@
     }
     
     .miembro {
-        flex: 0 0 80px;
-        width: 70px;
+        flex: 0 0 calc(25% - 8px);
+        width: 75px;
         height: 90px;
+        min-width: 70px;
     }
 
     .boceto,
     .info_miembro {
-        width: 70px;
+        width: 75px;
     }
 
     .fila-equipo {
-        gap: 10px;
+        gap: 8px;
+        padding: 0 8px;
+    }
+
+    .fila-superior {
+        margin-bottom: 12px;
     }
 
     .fila-superior {
@@ -206,6 +240,7 @@
     }
 
     .floritura {
-        width: 120px;
+        width: 100%;
+        max-width: 380px;
     }
 }
