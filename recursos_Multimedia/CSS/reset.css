@@ -1,3 +1,32 @@
+/* Fuentes globales */
+@font-face {
+    font-family: 'trabajo-multimedia-tipografia';
+    src: url('../fonts/trabajo-multimedia-tipografia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cardo';
+    src: url('../fonts/Cardo/Cardo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cardo';
+    src: url('../fonts/Cardo/Cardo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cardo';
+    src: url('../fonts/Cardo/Cardo-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
   all: unset;
@@ -32,4 +61,13 @@ table {
 /* Revert the 'white-space' property for textarea elements on Safari */
 textarea {
   white-space: revert;
+}
+
+/* Estilos de fuentes globales */
+body {
+    font-family: 'Cardo', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'trabajo-multimedia-tipografia', serif;
 }
