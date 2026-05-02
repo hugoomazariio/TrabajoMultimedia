@@ -152,7 +152,7 @@
     width: 90%;
     max-width: 750px;
     padding: 40px;
-    border: 1px solid #ccc;
+    border: 1px solid #5c2703;
     border-radius: 15px;
     background: #f9f9f9;
     font-family: Arial, sans-serif;
@@ -164,12 +164,12 @@
     margin-bottom: 25px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #2e7d32;
+    color: #5c2703;
 }
 
 .input-group {
     display: flex;
-    border: 2px solid #ccc;
+    border: 2px solid #5c2703;
     border-radius: 10px;
     overflow: hidden;
     background: white;
@@ -179,8 +179,8 @@
 
 .simbolo {
     padding: 15px 18px;
-    background: #eee;
-    border-right: 2px solid #ccc;
+    background: #f0e6d8;
+    border-right: 2px solid #5c2703;
     font-size: 20px;
 }
 
@@ -196,8 +196,8 @@
 button {
     width: 100%;
     padding: 15px;
-    background: #2e7d32;
-    color: white;
+    background: #5c2703;
+    color: #f5f5dc;
     border: none;
     border-radius: 10px;
     font-size: 18px;

@@ -45,6 +45,9 @@ El proyecto ha sido realizado de manera colaborativa por:
 ## 📂 Estructura del Repositorio
 ```text
 ├── index.html          # Archivo principal de la landing page
+├── audio               # Archivo de la música
 ├── css/                # Hojas de estilo (diseño western)
 ├── img/                # Assets visuales, fondos e iconos
-└── js/                 # Scripts de interactividad
+├── js/                 # Scripts de interactividad
+├── fonts/              # Fuentes de texto utilizadas
+├── video/              # Vídeo promocional del videojuego

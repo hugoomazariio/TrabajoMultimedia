@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/gameplay.css"> <!-- Estilos de la sección Gameplay -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/ilustracion.css"> <!-- Estilos de la sección Ilustración -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/equipo.css"> <!-- Estilos de la sección Equipo -->
+    <link rel="stylesheet" href="./recursos_Multimedia/CSS/objetivos.css"> <!-- Estilos de la sección Objetivos -->
+    <link rel="stylesheet" href="./recursos_Multimedia/CSS/video.css"> <!-- Estilos de la sección Video -->
 </head>
 
 <body>
@@ -102,9 +104,14 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div>VIDEO</div>
-            </div>
+            <section class="home-video-section">
+                <div class="video-container">
+                    <video controls>
+                        <source src="./recursos_Multimedia/video/path-to-nowhere-trailer.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento video.
+                    </video>
+                </div>
+            </section>
         </section>
 
         <!-- Aquí va la sección de historia-->
@@ -331,10 +338,14 @@
 
         <!-- Aquí va la sección de los objetivos-->
 
-        <section id="objetivos">
+        <section id="objetivos" class="objetivos-section">
+            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Arriba.png" alt="Decoración"
+                class="objetivos-divisor objetivos-divisor-top">
             <h2>OBJETIVOS</h2>
-            <div>
-                <p>IMAGEN (COMO SI FUERA UN MAPA)</p>
+            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Abajo.png" alt="Decoración"
+                class="objetivos-divisor objetivos-divisor-bottom">
+            <div class="objetivos-container">
+                <img alt="Mapa de Objetivos" src="./recursos_Multimedia/img/Objetivos_multimedia.png">
             </div>
         </section>
 
