@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
     comentarios = [
       {
         nombre: "Toño Recio",
-        texto: "Pintaza de juego, porfavor gente apoyad esta campaña!"
+        texto: "Pintaza de juego, por favor gente apoyad esta campaña!"
       },
       {
         nombre: "David Manzanares",
-        texto: "ya he aportado mi granito de arena, mucha suerte <3"
+        texto: "Ya he aportado mi granito de arena, mucha suerte <3"
       }
     ];
     guardarComentarios();
