@@ -1,14 +1,15 @@
-
 nav {
-    background: url("../img/Fondo_PapelVerde.jpg") center/cover no-repeat; 
+    background: url("../img/Fondo_PapelVerde.jpg") center/cover no-repeat;
     display: flex;
-    justify-content: space-between; /* Logo izquierda, links derecha */
+    justify-content: space-between;
+    /* Logo izquierda, links derecha */
     align-items: center;
     padding: 15px 40px;
     border-bottom: 3px solid #000;
-    position: sticky; /* Fija la barra de navegación en la parte superior */
+    position: sticky;
+    /* Fija la barra de navegación en la parte superior */
     top: 0;
-      z-index: 1000; 
+    z-index: 1000;
 }
 
 .logo {
@@ -20,22 +21,25 @@ nav {
     width: 40px;
 }
 
-.logo h3{
-   margin-left: 10px;
+.logo h3 {
+    margin-left: 10px;
     color: white;
     text-decoration: none;
-    font-size: 18px;  
+    font-size: 18px;
+    margin-right: 10px;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
     align-items: center;
     list-style: none;
 }
+
 .nav-links a {
     margin-left: 20px;
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -51,10 +55,10 @@ nav {
 }
 
 .hamburger .bar {
-flex-basis: 100%;
-height: 4px;
-background-color: white;
-margin: 3px
+    flex-basis: 100%;
+    height: 4px;
+    background-color: white;
+    margin: 3px
 }
 
 
@@ -67,24 +71,25 @@ html {
     nav {
         flex-wrap: wrap;
     }
-    
-    .hamburger{
+
+    .hamburger {
         display: flex;
         flex-wrap: wrap;
     }
-    
-    .logo{
-       max-height: 28px;
+
+    .logo {
+        max-height: 28px;
     }
 
-    .nav-links{
+    .nav-links {
         display: none;
         flex-basis: 100%;
         flex-wrap: wrap;
     }
 
-    .nav-links li{
-        flex-basis: 100%;;
+    .nav-links li {
+        flex-basis: 100%;
+        ;
     }
 
     .nav-links a {
@@ -92,7 +97,7 @@ html {
         font-size: 14px;
     }
 
-    .nav-links a:hover{
+    .nav-links a:hover {
         color: #f0c040;
     }
 }
@@ -101,24 +106,25 @@ html {
     nav {
         flex-wrap: wrap;
     }
-    
-    .hamburger{
+
+    .hamburger {
         display: flex;
         flex-wrap: wrap;
     }
-    
-    .logo{
-       max-height: 28px;
+
+    .logo {
+        max-height: 28px;
     }
 
-    .nav-links{
+    .nav-links {
         display: none;
         flex-basis: 100%;
         flex-wrap: wrap;
     }
 
-    .nav-links li{
-        flex-basis: 100%;;
+    .nav-links li {
+        flex-basis: 100%;
+        ;
     }
 
     .nav-links a {
@@ -126,7 +132,7 @@ html {
         font-size: 14px;
     }
 
-    .nav-links a:hover{
+    .nav-links a:hover {
         color: #f0c040;
     }
 }
@@ -135,24 +141,25 @@ html {
     nav {
         flex-wrap: wrap;
     }
-    
-    .hamburger{
+
+    .hamburger {
         display: flex;
         flex-wrap: wrap;
     }
-    
-    .logo{
-       max-height: 28px;
+
+    .logo {
+        max-height: 28px;
     }
 
-    .nav-links{
+    .nav-links {
         display: none;
         flex-basis: 100%;
         flex-wrap: wrap;
     }
 
-    .nav-links li{
-        flex-basis: 100%;;
+    .nav-links li {
+        flex-basis: 100%;
+        ;
     }
 
     .nav-links a {
@@ -160,7 +167,7 @@ html {
         font-size: 14px;
     }
 
-    .nav-links a:hover{
+    .nav-links a:hover {
         color: #f0c040;
     }
 }
