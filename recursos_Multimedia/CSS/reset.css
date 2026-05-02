@@ -1,7 +1,7 @@
 /* Fuentes globales */
 @font-face {
     font-family: 'trabajo-multimedia-tipografia';
-    src: url('../fonts/trabajo-multimedia-tipografia.ttf') format('truetype');
+    src: url('../fonts//trabajo-multimedia-tipografia/trabajo-multimedia-tipografia.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
