@@ -35,13 +35,13 @@
 
 /* Contenedor del contenido de Gameplay */
 .gameplay-container {
-	display: flex;
-	gap: 24px;
-	align-items: center;
-	margin: 0 auto;
-	max-width: 1200px;
-	padding: 0 32px;
-	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 60px; 
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Texto de Gameplay (izquierda) */
