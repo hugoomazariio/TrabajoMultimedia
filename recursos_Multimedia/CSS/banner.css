@@ -16,11 +16,11 @@
   background: rgba(0,0,0,0); /*Para la opacidad, así deja ver bien las letras (Por si no os gusta como se ven con las letras)*/
 }
 .banner h1 {
-  font-size: 60px;
+  font-size: 100px;
   margin: 0;
 }
 .banner h2{
-  font-size: 24px;
+  font-size: 45px;
 }
 
 .banner-content {

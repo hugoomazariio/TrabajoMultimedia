@@ -51,7 +51,7 @@
 	border: 3px solid #5c2703;
 	border-radius: 8px;
 	line-height: 1.6;
-	font-size: 24px;
+	font-size: 28px;
 }
 
 /* Imagen de Gameplay (derecha) */
@@ -60,8 +60,8 @@
 }
 
 .gameplay-image img {
-	width: 100%;
-	max-width: 500px;
+	width: 750px;
+	max-width: 1200px;
 	height: auto;
 	object-fit: cover;
 	border-radius: 10px;
