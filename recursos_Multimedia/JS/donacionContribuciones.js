@@ -14,10 +14,10 @@ function validar() {
 
 input.addEventListener("input", validar);
 
-// Recargar página al hacer click
+// Mensaje de gracias al hacer click
 boton.addEventListener("click", () => {
     if (!boton.classList.contains("disabled")) {
-        location.reload();
+        alert("¡Muchas gracias por tu contribución de " + input.value + "€! Tu apoyo es muy importante para nosotros.");
     }
 });
 
