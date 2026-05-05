@@ -5,7 +5,10 @@
   width: 80%;
   max-width: 1100px;
   margin: 40px auto;
-  font-family: Arial, sans-serif;
+  font-family: 'Cardo';
+  src: url('../fonts/Cardo/Cardo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 #preguntas.comentarios-wrapper h2 {
