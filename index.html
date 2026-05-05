@@ -444,22 +444,22 @@
             </h4>
             <div class="contact-wrapper">
                 <!-- Formulario a la izquierda -->
-                <form> <!-- Aquí va el formulario de contacto.-->
+                <form onsubmit="return false;"> <!-- Aquí va el formulario de contacto.-->
                     <div class="input-with-label text-left">
                         <span>Nombre:</span>
-                        <input type="text" name="name" placeholder="Escriba su nombre" required="" maxlength="100">
+                        <input type="text" id="nombre" name="name" placeholder="Escriba su nombre"  maxlength="100">
                     </div>
                     <div class="input-with-label text-left">
                         <span>Correo electrónico:</span>
-                        <input type="email" name="email" placeholder="Escriba su correo electrónico" required=""
+                        <input type="email" id="email" name="email" placeholder="Escriba su correo electrónico" 
                             maxlength="254">
                     </div>
                     <div class="input-with-label text-left">
                         <span>Tu mensaje:</span>
-                        <textarea name="message" placeholder="Escriba su mensaje" rows="3" required=""
+                        <textarea id="idcomentario" name="message" placeholder="Escriba su mensaje" rows="3" 
                             maxlength="5000"></textarea>
                     </div>
-                    <input type="submit" value="Enviar">
+                    <input type="submit" onclick="validarForm()" value="Enviar">
                 </form>
 
                 <!-- Redes sociales a la derecha -->
@@ -498,6 +498,7 @@
     <script src="./recursos_Multimedia/JS/comentarios.js"></script> <!-- Script para los comentarios -->
     <script src="./recursos_Multimedia/JS/navegacion.js"></script> <!-- Script para la barra de navegación -->
     <script src="./recursos_Multimedia/JS/flipEquipo.js"></script> <!-- Script para voltear las tarjetas del equipo -->
+    <script src="./recursos_Multimedia/JS/validarForm.js"></script> <!-- Script para validar el formulario de contacto -->
 </body>
 
 </html>
