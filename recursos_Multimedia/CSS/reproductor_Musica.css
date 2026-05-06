@@ -1,0 +1,228 @@
+/* ESTILOS DEL REPRODUCTOR DE MÚSICA  */
+
+/* Sección contenedora principal del reproductor */
+.music-player-section {
+  background-image: url("../img/Fondo_PapelMarron.jpg"); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 60px 20px;
+  border-top: 4px solid #3b1f0a;    
+  border-bottom: 4px solid #3b1f0a; 
+}
+
+/* Caja interior del reproductor */
+.music-player-inner {
+  background: rgba(30, 12, 2, 0.82); 
+  border: 2px solid #8b5e2e;         
+  border-radius: 16px;
+  padding: 36px 50px;
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  gap: 22px;               
+  box-shadow: 0 0 30px rgba(0,0,0,0.5); 
+}
+
+/* Título del reproductor */
+.music-player-title {
+  font-family: 'Cardo', serif;
+  color: #d4a44c;           
+  font-size: 22px;
+  letter-spacing: 4px;      
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7); 
+}
+
+/* Botón de play/pausa */
+.music-btn-play {
+  background: #8b3a0a;       
+  color: #f5e6c8;             
+  border: 2px solid #d4a44c; 
+  border-radius: 50%;         
+  width: 64px;
+  height: 64px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s; /* Animación suave al hover */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Efecto hover del botón play/pausa */
+.music-btn-play:hover {
+  background: #b84d10;    
+  transform: scale(1.1);  
+}
+
+/* Contenedor de la barra de progreso con los tiempos */
+.music-player-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%; 
+}
+
+/* Textos de tiempo (actual y total) */
+.music-time {
+  color: #d4a44c;       
+  font-size: 13px;
+  font-family: monospace; 
+  min-width: 36px;
+  text-align: center;
+}
+
+/* Fondo gris de la barra de progreso (pista completa) */
+.music-progress-bg {
+  flex: 1;              
+  height: 8px;
+  background: #3b1f0a; 
+  border-radius: 4px;
+  border: 1px solid #8b5e2e;
+  cursor: pointer;      
+  position: relative;
+  overflow: hidden;
+}
+
+/* Relleno de la barra de progreso (parte reproducida) */
+.music-progress-fill {
+  height: 100%;
+  width: 0%;            /* Empieza vacía, se actualiza desde JS */
+  background: linear-gradient(90deg, #8b3a0a, #d4a44c); /* Degradado marrón → dorado */
+  border-radius: 4px;
+  transition: width 0.3s linear; /* Animación suave del avance */
+  pointer-events: none;          /* No interfiere con los clics en la barra */
+}
+
+/* Contenedor del control de volumen */
+.music-volume-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Iconos de volumen */
+.music-vol-icon {
+  font-size: 16px;
+}
+
+/* Slider (rango) de volumen */
+.music-volume {
+  -webkit-appearance: none; /* Elimina el estilo por defecto del navegador */
+  appearance: none;
+  width: 160px;
+  height: 6px;
+  background: #3b1f0a;      /* Pista del slider */
+  border-radius: 3px;
+  border: 1px solid #8b5e2e;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Círculo arrastrable del slider de volumen */
+.music-volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #d4a44c;     
+  border-radius: 50%;
+  border: 2px solid #5c2703;
+  cursor: pointer;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* iPad Pro y tablets grandes (hasta 1024px) */
+@media (max-width: 1024px) {
+  .music-player-section {
+    padding: 50px 20px; /* Reduce el padding exterior */
+  }
+
+  .music-player-inner {
+    max-width: 580px;
+    padding: 30px 40px;
+  }
+
+  .music-player-title {
+    font-size: 20px; /* Título ligeramente más pequeño */
+  }
+
+  .music-btn-play {
+    width: 58px;
+    height: 58px;
+    font-size: 20px;
+  }
+}
+
+/* Tablets (hasta 768px) */
+@media (max-width: 768px) {
+  .music-player-section {
+    padding: 40px 16px;
+  }
+
+  .music-player-inner {
+    max-width: 100%; /* Ocupa todo el ancho en tablet */
+    padding: 26px 24px;
+    gap: 18px;
+  }
+
+  .music-player-title {
+    font-size: 17px;
+    letter-spacing: 3px; /* Menos espaciado en pantallas medianas */
+  }
+
+  .music-btn-play {
+    width: 54px;
+    height: 54px;
+    font-size: 18px;
+  }
+
+  .music-volume {
+    width: 120px; /* Slider de volumen más estrecho */
+  }
+}
+
+/* Móviles (hasta 480px) */
+@media (max-width: 480px) {
+  .music-player-section {
+    padding: 30px 12px;
+  }
+
+  .music-player-inner {
+    padding: 22px 16px;
+    gap: 14px;
+    border-radius: 10px; /* Menos redondeado en móvil */
+  }
+
+  .music-player-title {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .music-btn-play {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .music-time {
+    font-size: 11px;
+    min-width: 28px;
+  }
+
+  .music-volume {
+    width: 100px; /* Slider aún más estrecho en móvil */
+  }
+
+  .music-vol-icon {
+    font-size: 13px;
+  }
+}

@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Path To Nowhere</title>
-    <link rel="icon" type="image/x-icon" href="./recursos_Multimedia/img/LogotipoTeamLemon_Negro.png"><!-- Favicon del sitio -->
+    <link rel="icon" type="image/x-icon" href="./recursos_Multimedia/img/LogotipoTeamLemon_Negro.png">
+    <!-- Favicon del sitio -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/reset.css">
-<!-- Hace que funcione para cualquier browser el CSS, TIENE QUE ESTAR EN LA PRIMERA LINEA -->
+    <!-- Hace que funcione para cualquier browser el CSS, TIENE QUE ESTAR EN LA PRIMERA LINEA -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/home.css"> <!-- Estilos de la sección Home -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/personajes.css"> <!-- Estilos de la sección Personajes -->
-    <link rel="stylesheet" href="./recursos_Multimedia/CSS/contacto_Disclaimer.css"><!-- Estilos de contacto y footer -->
-    <link rel="stylesheet" href="./recursos_Multimedia/CSS/contribuciones.css"><!-- Estilos de la sección Contribuciones -->
+    <link rel="stylesheet" href="./recursos_Multimedia/CSS/contacto_Disclaimer.css">
+    <!-- Estilos de contacto y footer -->
+    <link rel="stylesheet" href="./recursos_Multimedia/CSS/contribuciones.css">
+    <!-- Estilos de la sección Contribuciones -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/comentarios.css"><!-- Estilos de la sección Comentarios -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/preguntas.css"><!-- Estilos de la sección Preguntas -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/banner.css"> <!-- Estilos del banner -->
@@ -22,6 +25,8 @@
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/equipo.css"> <!-- Estilos de la sección Equipo -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/objetivos.css"> <!-- Estilos de la sección Objetivos -->
     <link rel="stylesheet" href="./recursos_Multimedia/CSS/video.css"> <!-- Estilos de la sección Video -->
+    <link rel="stylesheet" href="./recursos_Multimedia/CSS/reproductor_Musica.css">
+    <!-- Estilos del reproductor de música -->
 </head>
 
 <body>
@@ -75,7 +80,8 @@
                 <div class="home-description-container">
                     <div class="home-description">Path to Nowhere es un videojuego western de acción/aventura en el que
                         podrás investigar todo el mundo que te rodea. Deberás de recopilar pistas y testimonios sobre el
-                        famoso criminal de la región, para conseguir darle caza y llevarte tu parte de la recompensa. <br>
+                        famoso criminal de la región, para conseguir darle caza y llevarte tu parte de la recompensa.
+                        <br>
                         Prepárate para dominar el arte de la investigación: <br>
                         • Haz las preguntas adecuadas o presiona al sospechoso hasta que confiese.<br>
                         • Si intentan escapar, dales caza y utiliza el lazo para que no huyan.<br>
@@ -111,32 +117,78 @@
                     </video>
                 </div>
             </section>
+            <section class="music-player-section">
+
+                <!-- Caja central del reproductor -->
+                <div class="music-player-inner">
+
+                    <!-- Título del reproductor -->
+                    <div class="music-player-title">♪ BANDA SONORA ♪</div>
+
+                    <!-- Botón de play / pausa -->
+                    <div class="music-player-controls">
+                        <button class="music-btn music-btn-play" id="playBtn">&#9654;</button>
+                    </div>
+
+                    <!-- Barra de progreso con tiempos -->
+                    <div class="music-player-bar-wrapper">
+                        <span class="music-time" id="currentTime">0:00</span> <!-- Tiempo actual -->
+                        <div class="music-progress-bg" id="progressBg">
+                            <div class="music-progress-fill" id="progressFill"></div> <!-- Relleno animado -->
+                        </div>
+                        <span class="music-time" id="totalTime">0:00</span> <!-- Duración total -->
+                    </div>
+
+                    <!-- Control de volumen -->
+                    <div class="music-volume-wrapper">
+                        <span class="music-vol-icon">🔈</span> <!-- Icono volumen bajo -->
+                        <input type="range" class="music-volume" id="volumeSlider" min="0" max="1" step="0.01"
+                            value="0.5"> <!-- Slider de 0 a 1 -->
+                        <span class="music-vol-icon">🔊</span> <!-- Icono volumen alto -->
+                    </div>
+
+                    <!-- Elemento de audio oculto — cambia el src por el nombre real del archivo -->
+                    <audio id="musicPlayer">
+                        <source src="./recursos_Multimedia/audio/BandaSonora.mp3" type="audio/mp3">
+                    </audio>
+
+                </div>
+            </section>
         </section>
 
         <!-- Aquí va la sección de historia-->
         <section id="historia" class="historia-section">
-            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Arriba.png" alt="Decoración" class="historia-divisor historia-divisor-top">
+            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Arriba.png" alt="Decoración"
+                class="historia-divisor historia-divisor-top">
             <h2>HISTORIA</h2>
-            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Abajo.png" alt="Decoración" class="historia-divisor historia-divisor-bottom">
+            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Abajo.png" alt="Decoración"
+                class="historia-divisor historia-divisor-bottom">
             <div class="historia-text">
-                Poniéndote en la piel del cazarrecompensas Jace Turner, en la región desierta de Moustuless, deberás de buscar pistas y 
+                Poniéndote en la piel del cazarrecompensas Jace Turner, en la región desierta de Moustuless, deberás de
+                buscar pistas y
                 colaborar con la sheriff Blanche para dar caza al jefe de la banda de “Los Kräve”.
-                 Un criminal que ha campado a sus anchas durante demasiado tiempo, y cuyas acciones tienen atemorizados a todos los pueblos
-                  cercanos. Para lograr llevarte tu parte de la recompensa, deberás de investigar sobre el paradero del criminal.
-                   Sin embargo, no sabes qué, ni a quien, te vas a encontrar al final.
+                Un criminal que ha campado a sus anchas durante demasiado tiempo, y cuyas acciones tienen atemorizados a
+                todos los pueblos
+                cercanos. Para lograr llevarte tu parte de la recompensa, deberás de investigar sobre el paradero del
+                criminal.
+                Sin embargo, no sabes qué, ni a quien, te vas a encontrar al final.
             </div>
         </section>
 
         <!-- Aquí va la sección de Gameplay-->
         <section id="gameplay" class="gameplay-section">
-            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Arriba.png" alt="Decoración" class="gameplay-divisor gameplay-divisor-top">
+            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Arriba.png" alt="Decoración"
+                class="gameplay-divisor gameplay-divisor-top">
             <h2>GAMEPLAY</h2>
-            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Abajo.png" alt="Decoración" class="gameplay-divisor gameplay-divisor-bottom">
+            <img src="./recursos_Multimedia/img/DivisorLineaDoble_Abajo.png" alt="Decoración"
+                class="gameplay-divisor gameplay-divisor-bottom">
             <div class="gameplay-container">
                 <div class="gameplay-text">
-                En <i>Path to nowhere</i> te toparás un mundo vivo y que te llama a investigar.
-                 Encontrarás numerosas mecánicas para buscar pistas e interrogar a cualquier persona que te ayude a llegar
-                  a tu objetivo. El diseño se centra en darte la libertad que necesitas para poder darle caza al famoso criminal. 
+                    En <i>Path to nowhere</i> te toparás un mundo vivo y que te llama a investigar.
+                    Encontrarás numerosas mecánicas para buscar pistas e interrogar a cualquier persona que te ayude a
+                    llegar
+                    a tu objetivo. El diseño se centra en darte la libertad que necesitas para poder darle caza al
+                    famoso criminal.
                 </div>
                 <div class="gameplay-image">
                     <img src="./recursos_Multimedia/img/Mapa_GDD.png" alt="Escenario de Gameplay">
@@ -186,90 +238,102 @@
 
         <!-- Aquí va la sección de las preguntas-->
         <section id="preguntas" class="comentarios-wrapper">
-    
-    <div class="ComenTitle">
-        <div class="ComenTitleLine"></div>
-        <h2>PREGUNTAS</h2>
-        <div class="ComenTitleLine"></div>
-    </div>
 
-    <div class="ComenLista">
-        
-        <div class="ComenItem">
-            <img class="ComenItemAvatar" src="./recursos_Multimedia/img/Personajes_IconoCazarrecompensas.png" alt="Icono">
-            <div class="ComenItemContent">
-                <div class="ComenItemName">Duración</div>
-                <div class="ComenItemText">
-                    <strong>¿Cuántas horas de juego se pueden esperar?</strong>
-                    <p style="margin-top: 10px; color: #333;">Se estiman 20 horas en total. 15 horas de historia principal y 5 horas de misiones secundarias.
-</p>
-                </div>
+            <div class="ComenTitle">
+                <div class="ComenTitleLine"></div>
+                <h2>PREGUNTAS</h2>
+                <div class="ComenTitleLine"></div>
             </div>
-        </div>
-<div class="ComenItem">
-    <img class="ComenItemAvatar" src="./recursos_Multimedia/img/Personajes_IconoCriminal.png" alt="Icono">
-    
-    <div class="ComenItemContent">
-        <div class="ComenItemName">Idioma</div>
-        <div class="ComenItemText">
-            <strong>¿En qué idiomas está disponible el juego?</strong>
-            <p style="margin-top: 10px; color: #333;">
-                La versión final del juego estará disponible en inglés y español.
-            </p>
-        </div>
-    </div>
-</div>
-        <div class="ComenItem">
-            <img class="ComenItemAvatar" src="./recursos_Multimedia/img/Personajes_IconoSheriff.png" alt="Icono">
-            <div class="ComenItemContent">
-                <div class="ComenItemName">Beta</div>
-                <div class="ComenItemText">
-                    <strong>¿Si se logra el objetivo de port a consolas, habrá una beta para esta plataforma?
-</strong>
-                    <p style="margin-top: 10px; color: #333;">Si, se prevee una beta unas semanas antes del lanzamiento para todas las plataformas. Si se logra el objetivo del port a consolas, la beta también llegará a estas.</p>
-                </div>
-            </div>
-        </div>
-<div class="ComenItem">
-            <img class="ComenItemAvatar" src="./recursos_Multimedia/img/Personajes_IconoCazarrecompensas.png" alt="Icono">
-            <div class="ComenItemContent">
-                <div class="ComenItemName">Cambio de versión</div>
-                <div class="ComenItemText">
-                    <strong>¿Si adquiero la versión estándar puedo cambiar posteriormente a la deluxe?
-</strong>
-                    <p style="margin-top: 10px; color: #333;">No, una vez elegida la versión que se planea adquirir, no se podrá cambiar.
-</p>
-                </div>
-            </div>
-        </div>
-<div class="ComenItem">
-    <img class="ComenItemAvatar" src="./recursos_Multimedia/img/Personajes_IconoCriminal.png" alt="Icono">
-    
-    <div class="ComenItemContent">
-        <div class="ComenItemName">Selección de plataforma</div>
-        <div class="ComenItemText">
-            <strong>¿Cómo puedo elegir para qué consola quiero mi juego?</strong>
-            <p style="margin-top: 10px; color: #333;">
-               Una vez terminado el crowdfunding, se mandará una encuesta a todos los colaboradores para que elijan la plataforma deseada en la que jugar al videojuego.
-            </p>
-        </div>
-    </div>
-</div>
 
-<div class="ComenItem">
-          <img class="ComenItemAvatar" src="./recursos_Multimedia/img/Personajes_IconoSheriff.png" alt="Icono">
-            <div class="ComenItemContent">
-                <div class="ComenItemName">Formato físico</div>
-                <div class="ComenItemText">
-                    <strong>¿Se podrá comprar el videojuego en formato físico una vez terminada la campaña?
-</strong>
-                    <p style="margin-top: 10px; color: #333;">Si, aunque hay que tener en cuenta que el lanzamiento en formato digital será antes que en físico.</p>
-                </div>
-            </div>
-        </div>
+            <div class="ComenLista">
 
-    </div>
-</section>
+                <div class="ComenItem">
+                    <img class="ComenItemAvatar" src="./recursos_Multimedia/img/Personajes_IconoCazarrecompensas.png"
+                        alt="Icono">
+                    <div class="ComenItemContent">
+                        <div class="ComenItemName">Duración</div>
+                        <div class="ComenItemText">
+                            <strong>¿Cuántas horas de juego se pueden esperar?</strong>
+                            <p style="margin-top: 10px; color: #333;">Se estiman 20 horas en total. 15 horas de historia
+                                principal y 5 horas de misiones secundarias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ComenItem">
+                    <img class="ComenItemAvatar" src="./recursos_Multimedia/img/Personajes_IconoCriminal.png"
+                        alt="Icono">
+
+                    <div class="ComenItemContent">
+                        <div class="ComenItemName">Idioma</div>
+                        <div class="ComenItemText">
+                            <strong>¿En qué idiomas está disponible el juego?</strong>
+                            <p style="margin-top: 10px; color: #333;">
+                                La versión final del juego estará disponible en inglés y español.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ComenItem">
+                    <img class="ComenItemAvatar" src="./recursos_Multimedia/img/Personajes_IconoSheriff.png"
+                        alt="Icono">
+                    <div class="ComenItemContent">
+                        <div class="ComenItemName">Beta</div>
+                        <div class="ComenItemText">
+                            <strong>¿Si se logra el objetivo de port a consolas, habrá una beta para esta plataforma?
+                            </strong>
+                            <p style="margin-top: 10px; color: #333;">Si, se prevee una beta unas semanas antes del
+                                lanzamiento para todas las plataformas. Si se logra el objetivo del port a consolas, la
+                                beta también llegará a estas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ComenItem">
+                    <img class="ComenItemAvatar" src="./recursos_Multimedia/img/Personajes_IconoCazarrecompensas.png"
+                        alt="Icono">
+                    <div class="ComenItemContent">
+                        <div class="ComenItemName">Cambio de versión</div>
+                        <div class="ComenItemText">
+                            <strong>¿Si adquiero la versión estándar puedo cambiar posteriormente a la deluxe?
+                            </strong>
+                            <p style="margin-top: 10px; color: #333;">No, una vez elegida la versión que se planea
+                                adquirir, no se podrá cambiar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ComenItem">
+                    <img class="ComenItemAvatar" src="./recursos_Multimedia/img/Personajes_IconoCriminal.png"
+                        alt="Icono">
+
+                    <div class="ComenItemContent">
+                        <div class="ComenItemName">Selección de plataforma</div>
+                        <div class="ComenItemText">
+                            <strong>¿Cómo puedo elegir para qué consola quiero mi juego?</strong>
+                            <p style="margin-top: 10px; color: #333;">
+                                Una vez terminado el crowdfunding, se mandará una encuesta a todos los colaboradores
+                                para que elijan la plataforma deseada en la que jugar al videojuego.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ComenItem">
+                    <img class="ComenItemAvatar" src="./recursos_Multimedia/img/Personajes_IconoSheriff.png"
+                        alt="Icono">
+                    <div class="ComenItemContent">
+                        <div class="ComenItemName">Formato físico</div>
+                        <div class="ComenItemText">
+                            <strong>¿Se podrá comprar el videojuego en formato físico una vez terminada la campaña?
+                            </strong>
+                            <p style="margin-top: 10px; color: #333;">Si, aunque hay que tener en cuenta que el
+                                lanzamiento en formato digital será antes que en físico.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
         <!-- Aquí va la sección de las contribuciones. ESTA SECCIÓN VA A LA IZQUIERDA-->
         <section id="contribuciones" class="contribuciones-section">
@@ -288,31 +352,33 @@
             <div class="precios-container">
                 <div class="estandar">
                     <div class="divisor_izq">
-                       <img src="./recursos_Multimedia/img/DivisorLineaSimple.png" class="EstandarLine lineaEstandarIzq"> 
+                        <img src="./recursos_Multimedia/img/DivisorLineaSimple.png"
+                            class="EstandarLine lineaEstandarIzq">
                     </div>
-                    <div class="contenido_centro"> 
-                       <img alt="Versión Estandar" src="./recursos_Multimedia/img/Contribuciones_Estandar.png"
-                        class="version_estandar"> 
+                    <div class="contenido_centro">
+                        <img alt="Versión Estandar" src="./recursos_Multimedia/img/Contribuciones_Estandar.png"
+                            class="version_estandar">
                     </div>
                     <div class="divisor_dcho">
-                       <img src="./recursos_Multimedia/img/DivisorLineaSimple.png" class="EstandarLine lineaEstandarDcho"> 
+                        <img src="./recursos_Multimedia/img/DivisorLineaSimple.png"
+                            class="EstandarLine lineaEstandarDcho">
                     </div>
                 </div>
                 <div class="deluxe">
                     <div class="divisor_izq">
-                       <img src="./recursos_Multimedia/img/DivisorLineaSimple.png" class="DeluxeLine lineaDeluxeIzq"> 
+                        <img src="./recursos_Multimedia/img/DivisorLineaSimple.png" class="DeluxeLine lineaDeluxeIzq">
                     </div>
                     <div class="contenido_centro">
                         <img alt="Versión Deluxe" src="./recursos_Multimedia/img/Contribuciones_Deluxe.png"
                             class="version_deluxe">
                     </div>
                     <div class="divisor_dcho">
-                       <img src="./recursos_Multimedia/img/DivisorLineaSimple.png" class="DeluxeLine lineaDeluxeDcho"> 
+                        <img src="./recursos_Multimedia/img/DivisorLineaSimple.png" class="DeluxeLine lineaDeluxeDcho">
                     </div>
                 </div>
                 <div class="versCazarecompensas">
                     <div class="divisor_izq">
-                       <img src="./recursos_Multimedia/img/DivisorLineaSimple.png" class="CazaRecLine lineaCazaRecIzq"> 
+                        <img src="./recursos_Multimedia/img/DivisorLineaSimple.png" class="CazaRecLine lineaCazaRecIzq">
                     </div>
                     <div class="contenido_centro">
                         <img alt="Versión Cazarecompensas"
@@ -320,7 +386,8 @@
                             class="version_cazarecompensas">
                     </div>
                     <div class="divisor_dcho">
-                       <img src="./recursos_Multimedia/img/DivisorLineaSimple.png" class="CazaRecLine lineaCazaRecDcho"> 
+                        <img src="./recursos_Multimedia/img/DivisorLineaSimple.png"
+                            class="CazaRecLine lineaCazaRecDcho">
                     </div>
                 </div>
             </div>
@@ -348,156 +415,168 @@
         </section>
 
         <!-- Aquí va la sección de equipo-->
-<!-- SECCIÓN EQUIPO -->
-<section class="equipo-section" id="equipo">
-         <div class="divisor-container">
+        <!-- SECCIÓN EQUIPO -->
+        <section class="equipo-section" id="equipo">
+            <div class="divisor-container">
                 <img alt="Divisor floritura" src="./recursos_Multimedia/img/DivisorFloritura.png" class="floritura">
             </div>
-        <h1 class="equipo-titulo">EQUIPO</h1>
+            <h1 class="equipo-titulo">EQUIPO</h1>
             <h4 class="equipo-subtitulo">
                 Pulsa en las imágenes para conocer al equipo.
             </h4>
 
-        <div class="fila-equipo fila-superior">
-            
-            <article class="miembro">
-                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Paula.png" alt="Paula">
-                <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_InformacionPaula.png" alt="Información de Paula">
-            </article>
+            <div class="fila-equipo fila-superior">
 
-            <article class="miembro">
-                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Hugo.png" alt="Hugo">
-                <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_InformacionHugo.png" alt="Información de Hugo">
-            </article>
+                <article class="miembro">
+                    <img class="boceto" src="./recursos_Multimedia/img/Equipo_Paula.png" alt="Paula">
+                    <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_InformacionPaula.png"
+                        alt="Información de Paula">
+                </article>
 
-            <article class="miembro">
-                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Hector.png" alt="Héctor">
-                <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_InformacionHector.png" alt="Información de Héctor">
-            </article>
+                <article class="miembro">
+                    <img class="boceto" src="./recursos_Multimedia/img/Equipo_Hugo.png" alt="Hugo">
+                    <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_InformacionHugo.png"
+                        alt="Información de Hugo">
+                </article>
 
-            <article class="miembro">
-                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Adrian.png" alt="Adrián"> 
-                <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_InformacionAdrian.png" alt="Información de Adrián">
-            </article>    
-        </div>
+                <article class="miembro">
+                    <img class="boceto" src="./recursos_Multimedia/img/Equipo_Hector.png" alt="Héctor">
+                    <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_InformacionHector.png"
+                        alt="Información de Héctor">
+                </article>
 
-        <div class="fila-equipo fila-inferior">
-            
-            <article class="miembro">
-                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Dani.png" alt="Dani">
-                <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_InformacionDani.png" alt="Información de Dani">
-            </article>
-
-                        
-            <article class="miembro">
-                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Izan.png" alt="Izan">
-                <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_InformacionIzan.png" alt="Información de Izan">
-            </article>
-
-            <article class="miembro">
-                <img class="boceto" src="./recursos_Multimedia/img/Equipo_Andres.png" alt="Andrés">
-                <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_Informacion_Andres.png" alt="Información de Andrés">
-            </article>
-        </div>
-    </div>
-</section>
-
-        <!-- Aquí va la sección de comentarios-->
-
-        <section id="comentarios">
-            <div class="comentarios-wrapper">
-
-          <div class="ComenTitle">
-              <div class="ComenTitleLine"></div>
-              <h2>COMENTARIOS</h2>
-              <div class="ComenTitleLine"></div>
-        </div>
-
-          <div class="ComenInputRow">
-            <img class="ComenAvatar" src="./recursos_Multimedia/img/ComentariosUser.png" alt="avatar">
-
-            <div class="ComenRight">
-              <textarea id="comentarioInput" class="ComenTextarea" placeholder="Escribe tu comentario..."></textarea>
-              <button class="ComenButton">Enviar</button>
+                <article class="miembro">
+                    <img class="boceto" src="./recursos_Multimedia/img/Equipo_Adrian.png" alt="Adrián">
+                    <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_InformacionAdrian.png"
+                        alt="Información de Adrián">
+                </article>
             </div>
-          </div>
 
-          <div class="ComenDivider" id="dividerComentarios">
-          <div class="ComenLine"></div>
+            <div class="fila-equipo fila-inferior">
 
-          <button class="ComenToggleBtn" id="toggleBtn">▼</button>
+                <article class="miembro">
+                    <img class="boceto" src="./recursos_Multimedia/img/Equipo_Dani.png" alt="Dani">
+                    <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_InformacionDani.png"
+                        alt="Información de Dani">
+                </article>
 
-          <div class="ComenLine"></div>
+
+                <article class="miembro">
+                    <img class="boceto" src="./recursos_Multimedia/img/Equipo_Izan.png" alt="Izan">
+                    <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_InformacionIzan.png"
+                        alt="Información de Izan">
+                </article>
+
+                <article class="miembro">
+                    <img class="boceto" src="./recursos_Multimedia/img/Equipo_Andres.png" alt="Andrés">
+                    <img class="info_miembro" src="./recursos_Multimedia/img/Equipo_Informacion_Andres.png"
+                        alt="Información de Andrés">
+                </article>
+            </div>
+    </div>
+    </section>
+
+    <!-- Aquí va la sección de comentarios-->
+
+    <section id="comentarios">
+        <div class="comentarios-wrapper">
+
+            <div class="ComenTitle">
+                <div class="ComenTitleLine"></div>
+                <h2>COMENTARIOS</h2>
+                <div class="ComenTitleLine"></div>
+            </div>
+
+            <div class="ComenInputRow">
+                <img class="ComenAvatar" src="./recursos_Multimedia/img/ComentariosUser.png" alt="avatar">
+
+                <div class="ComenRight">
+                    <textarea id="comentarioInput" class="ComenTextarea"
+                        placeholder="Escribe tu comentario..."></textarea>
+                    <button class="ComenButton">Enviar</button>
+                </div>
+            </div>
+
+            <div class="ComenDivider" id="dividerComentarios">
+                <div class="ComenLine"></div>
+
+                <button class="ComenToggleBtn" id="toggleBtn">▼</button>
+
+                <div class="ComenLine"></div>
+            </div>
+
+            <div id="comentariosLista" class="ComenLista oculto"></div>
+
         </div>
-          
-          <div id="comentariosLista" class="ComenLista oculto"></div>
+    </section>
 
-        </div>
-     </section>
+    <!-- Aquí va la sección de contacto-->
+    <div id="contacto" class="contact-section">
+        <h1>CONTACTO</h1>
+        <h4>
+            Por favor, rellena el formulario de abajo y nuestro equipo se pondrá en contacto contigo en breve.
+        </h4>
+        <div class="contact-wrapper">
+            <!-- Formulario a la izquierda -->
+            <form onsubmit="return false;"> <!-- Aquí va el formulario de contacto.-->
+                <div class="input-with-label text-left">
+                    <span>Nombre:</span>
+                    <input type="text" id="nombre" name="name" placeholder="Escriba su nombre" maxlength="100">
+                </div>
+                <div class="input-with-label text-left">
+                    <span>Correo electrónico:</span>
+                    <input type="email" id="email" name="email" placeholder="Escriba su correo electrónico"
+                        maxlength="254">
+                </div>
+                <div class="input-with-label text-left">
+                    <span>Tu mensaje:</span>
+                    <textarea id="idcomentario" name="message" placeholder="Escriba su mensaje" rows="3"
+                        maxlength="5000"></textarea>
+                </div>
+                <input type="submit" onclick="validarForm()" value="Enviar">
+            </form>
 
-        <!-- Aquí va la sección de contacto-->
-        <div id="contacto" class="contact-section">
-            <h1>CONTACTO</h1>
-            <h4>
-                Por favor, rellena el formulario de abajo y nuestro equipo se pondrá en contacto contigo en breve.
-            </h4>
-            <div class="contact-wrapper">
-                <!-- Formulario a la izquierda -->
-                <form onsubmit="return false;"> <!-- Aquí va el formulario de contacto.-->
-                    <div class="input-with-label text-left">
-                        <span>Nombre:</span>
-                        <input type="text" id="nombre" name="name" placeholder="Escriba su nombre"  maxlength="100">
-                    </div>
-                    <div class="input-with-label text-left">
-                        <span>Correo electrónico:</span>
-                        <input type="email" id="email" name="email" placeholder="Escriba su correo electrónico" 
-                            maxlength="254">
-                    </div>
-                    <div class="input-with-label text-left">
-                        <span>Tu mensaje:</span>
-                        <textarea id="idcomentario" name="message" placeholder="Escriba su mensaje" rows="3" 
-                            maxlength="5000"></textarea>
-                    </div>
-                    <input type="submit" onclick="validarForm()" value="Enviar">
-                </form>
-
-                <!-- Redes sociales a la derecha -->
-                <div class="social-networks">
-                    <div class="social-links">
-                        <a href="https://github.com/hugoomazariio/TrabajoMultimedia.git" target="_blank"
-                            class="social-link">
-                            <img src="./recursos_Multimedia/img/github-icon.png" alt="GitHub">
-                        </a>
-                        <span></span>
-                        <a href="https://www.instagram.com/teamlemon_official/" target="_blank" class="social-link">
-                            <img src="./recursos_Multimedia/img/instagram-icon.png" alt="Instagram">
-                        </a>
-                    </div>
+            <!-- Redes sociales a la derecha -->
+            <div class="social-networks">
+                <div class="social-links">
+                    <a href="https://github.com/hugoomazariio/TrabajoMultimedia.git" target="_blank"
+                        class="social-link">
+                        <img src="./recursos_Multimedia/img/github-icon.png" alt="GitHub">
+                    </a>
+                    <span></span>
+                    <a href="https://www.instagram.com/teamlemon_official/" target="_blank" class="social-link">
+                        <img src="./recursos_Multimedia/img/instagram-icon.png" alt="Instagram">
+                    </a>
                 </div>
             </div>
         </div>
-        <hr>
-        <footer> <!-- Disclaimer con el logo-->
-            <div class="footer-brand">
-                <a>
-                    <img alt="Team Lemon Logo" src="./recursos_Multimedia/img/LogotipoTeamLemon_Blanco.png">
-                </a>
-                <h5>© Copyright 2026 Team Lemon - All Rights Reserved</h5>
-                <h5>ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no
-                    representa un producto real.
-                    Práctica de Multimedia, 1º GDDV - Curso 25/26 (Móstoles), URJC. La URJC no se hace responsable del
-                    contenido expuesto por el autor.</h5>
-            </div>
-        </footer>
+    </div>
+    <hr>
+    <footer> <!-- Disclaimer con el logo-->
+        <div class="footer-brand">
+            <a>
+                <img alt="Team Lemon Logo" src="./recursos_Multimedia/img/LogotipoTeamLemon_Blanco.png">
+            </a>
+            <h5>© Copyright 2026 Team Lemon - All Rights Reserved</h5>
+            <h5>ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no
+                representa un producto real.
+                Práctica de Multimedia, 1º GDDV - Curso 25/26 (Móstoles), URJC. La URJC no se hace responsable del
+                contenido expuesto por el autor.</h5>
+        </div>
+    </footer>
     </div>
 
 
-    <script src="./recursos_Multimedia/JS/cambioExpedientePersonaje.js"></script> <!-- Script para cambiar el expediente del personaje -->
-    <script src="./recursos_Multimedia/JS/donacionContribuciones.js"></script> <!-- Script para la sección de donaciones y contribuciones -->
+    <script src="./recursos_Multimedia/JS/cambioExpedientePersonaje.js"></script>
+    <!-- Script para cambiar el expediente del personaje -->
+    <script src="./recursos_Multimedia/JS/donacionContribuciones.js"></script>
+    <!-- Script para la sección de donaciones y contribuciones -->
     <script src="./recursos_Multimedia/JS/comentarios.js"></script> <!-- Script para los comentarios -->
     <script src="./recursos_Multimedia/JS/navegacion.js"></script> <!-- Script para la barra de navegación -->
     <script src="./recursos_Multimedia/JS/flipEquipo.js"></script> <!-- Script para voltear las tarjetas del equipo -->
-    <script src="./recursos_Multimedia/JS/validarForm.js"></script> <!-- Script para validar el formulario de contacto -->
+    <script src="./recursos_Multimedia/JS/validarForm.js"></script>
+    <!-- Script para validar el formulario de contacto -->
+    <script src="./recursos_Multimedia/JS/reproductorMusica.js"></script> <!-- Script para el reproductor de música -->
 </body>
 
 </html>
