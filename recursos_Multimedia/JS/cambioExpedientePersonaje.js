@@ -8,14 +8,20 @@ let fadeInContainer = imgchange.parentElement; // Obtener el contenedor .fade-in
 // Función para cambiar imagen con transición fade
 function cambiarImagenConFade(nuevaRuta) {
     // Agregar la animación de fade-in y fade-out
-    fadeInContainer.classList.add("fade-in");
-    fadeInContainer.classList.add("fade-out");
+    fadeInContainer.classList.remove("fade-in");
+    fadeInContainer.classList.remove("fade-out");
 
+    void fadeInContainer.offsetWidth;
+
+    fadeInContainer.classList.add("fade-out");
     // Después de que termine el fade-out, cambiar la imagen y hacer fade-in
     setTimeout(function () {
         imgchange.src = nuevaRuta;
-        
+
         fadeInContainer.classList.remove("fade-out");
+
+        void fadeInContainer.offsetWidth;
+        
         fadeInContainer.classList.add("fade-in");
     }, 800); // 800ms coincide con la duración de la animación
 }
