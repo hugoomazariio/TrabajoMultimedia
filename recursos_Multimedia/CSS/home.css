@@ -25,6 +25,15 @@ h1, h2, h3, h4, h5, h6,.equipo-titulo,
     align-items: center;
 }
 
+.home-content-section {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
 /* Imagen principal (izquierda) */
 .home-image {
     flex: 0 0 50%;

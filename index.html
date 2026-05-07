@@ -68,7 +68,7 @@
                 <h2>¿Qué encontrarás al final del camino?</h2>
             </div>
         </section>
-        <section>
+        <section class="home-content-section">
             <div class="home-main-container">
                 <div class="home-image">
                     <div>
@@ -109,6 +109,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Sección del vídeo -->
             <section class="home-video-section">
                 <div class="video-container">
                     <video controls>
@@ -117,45 +119,34 @@
                     </video>
                 </div>
             </section>
+
+            <!-- Reproductor de música -->
             <section class="music-player-section">
-
-                <!-- Caja central del reproductor -->
                 <div class="music-player-inner">
-
-                    <!-- Título del reproductor -->
                     <h2 class="music-player-title">♪ BANDA SONORA ♪</h2>
-
-                    <!-- Botón de play / pausa -->
                     <div class="music-player-controls">
                         <button class="music-btn music-btn-play" id="playBtn">&#9654;</button>
                     </div>
-
-                    <!-- Barra de progreso con tiempos -->
                     <div class="music-player-bar-wrapper">
-                        <span class="music-time" id="currentTime">0:00</span> <!-- Tiempo actual -->
+                        <span class="music-time" id="currentTime">0:00</span>
                         <div class="music-progress-bg" id="progressBg">
-                            <div class="music-progress-fill" id="progressFill"></div> <!-- Relleno animado -->
+                            <div class="music-progress-fill" id="progressFill"></div>
                         </div>
-                        <span class="music-time" id="totalTime">0:00</span> <!-- Duración total -->
+                        <span class="music-time" id="totalTime">0:00</span>
                     </div>
-
-                    <!-- Control de volumen -->
                     <div class="music-volume-wrapper">
-                        <span class="music-vol-icon">🔈</span> <!-- Icono volumen bajo -->
+                        <span class="music-vol-icon">🔈</span>
                         <input type="range" class="music-volume" id="volumeSlider" min="0" max="1" step="0.01"
-                            value="0.5"> <!-- Slider de 0 a 1 -->
-                        <span class="music-vol-icon">🔊</span> <!-- Icono volumen alto -->
+                            value="0.5">
+                        <span class="music-vol-icon">🔊</span>
                     </div>
-
-                    <!-- Elemento de audio oculto — cambia el src por el nombre real del archivo -->
                     <audio id="musicPlayer">
                         <source src="./recursos_Multimedia/audio/BandaSonora.mp3" type="audio/mp3">
                     </audio>
-
                 </div>
             </section>
-        </section>
 
+        </section> <!-- Cierre de home-content-section -->
         <!-- Aquí va la sección de historia-->
         <section id="historia" class="historia-section">
             <img src="./recursos_Multimedia/img/DivisorLineaDoble_Arriba.png" alt="Decoración"

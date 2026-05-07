@@ -9,6 +9,15 @@ const currentTimeEl = document.getElementById('currentTime');  // Texto del tiem
 const totalTimeEl   = document.getElementById('totalTime');    // Texto del tiempo total
 const volumeSlider  = document.getElementById('volumeSlider'); // Slider de volumen
 
+/* Ocultar el control de volumen solo en dispositivos táctiles
+   ya que los navegadores móviles no permiten controlarlo por JS.
+   En PC el slider funciona correctamente independientemente del tamaño de ventana */
+
+const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+if (isTouchDevice) {
+  document.querySelector('.music-volume-wrapper').style.display = 'none';
+}
+
 /* Volumen inicial al cargar la página (50%) */
 audio.volume = 0.5;
 
