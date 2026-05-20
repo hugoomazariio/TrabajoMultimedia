@@ -2,6 +2,10 @@
 footer {
 	/* El footer usa papel verde para contrastar con el fondo de la página */
 	background: url("../img/Fondo_PapelVerde.jpg") center/cover no-repeat;
+	background-image: url("../img/Fondo_PapelVerde.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	padding: 24px 12px;
 	margin-top: 0;
 	color: #fff;
